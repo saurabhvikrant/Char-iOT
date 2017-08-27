@@ -7,11 +7,12 @@ export default class Header extends React.Component {
     return (
       <div className="container">
          <div className="row">
-            <div className="col-md-12 p10">
+           <div className="col-md-12">
+            <div className="navbar navbar-default navbar-fixed-top p10 ">
                <div className="logo-header col-md-1 text-center">
                     <a href=""> <img src={logo} className="img-width"></img></a>
                </div>
-               <div className="col-md-8 col-sm-10 col-md-offset-2">
+               <div className="col-md-8 col-sm-10 m15">
                   <div className="navigation">
                      <ul className="nav navbar-nav">
                         <li><a href="">PRODUCTS</a></li>
@@ -29,6 +30,7 @@ export default class Header extends React.Component {
                </div>
             </div>
          </div>
+       </div>
       </div>
     )
   }

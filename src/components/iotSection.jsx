@@ -15,7 +15,10 @@ export default class IotSection extends React.Component {
                   <div className="col-md-12 iot-section-second-heading">
                      <h4 className=" text-center">Lorem Ipsum</h4>
                      <img src={computer} className="img-width p20"></img>
-                     <p>Chariot welcomes you to the world of possibilities where we take internet of things to next level of innovation. Connect everything through our smart products ucts and manage resources like you have never done before..
+                     <p>Chariot welcomes you to the world of possibilities where we
+                       take internet of things to next level of innovation. Connect
+                       everything through our smart products ucts and manage resources
+                       like you have never done before..
                      </p>
                   </div>
                </div>
@@ -23,7 +26,10 @@ export default class IotSection extends React.Component {
                   <div className="col-md-12 iot-section-second-heading">
                      <h4 className="text-center">Lorem Ipsum</h4>
                      <img src={computer} className="img-width p20"></img>
-                     <p>Chariot welcomes you to the world of possibilities where we take internet of things to next level of innovation. Connect everything through our smart products ucts and manage resources like you have never done before..
+                     <p>Chariot welcomes you to the world of possibilities where we
+                        take internet of things to next level of innovation.
+                        Connect everything through our smart products ucts and manage resources
+                        like you have never done before..
                      </p>
                   </div>
                </div>
@@ -31,14 +37,17 @@ export default class IotSection extends React.Component {
                   <div className="col-md-12 iot-section-second-heading">
                      <h4 className="text-center">Lorem Ipsum</h4>
                      <img src={computer} className="img-width p20"></img>
-                     <p>Chariot welcomes you to the world of possibilities where we take internet of things to next level of innovation. Connect everything through our smart products ucts and manage resources like you have never done before..
+                     <p>Chariot welcomes you to the world of possibilities where we take
+                        internet of things to next level of innovation. Connect everything
+                        through our smart products ucts and manage resources like you have
+                        never done before..
                      </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
 </section>
 </div>
 )
