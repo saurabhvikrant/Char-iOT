@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../images/logo.png'
 import '../../styles/index.scss';
+import {hashHistory } from 'react-router'
 
 export default class Header extends React.Component {
   render() {
@@ -15,7 +16,7 @@ export default class Header extends React.Component {
                <div className="col-md-8 col-sm-10 m15">
                   <div className="navigation">
                      <ul className="nav navbar-nav">
-                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="" onClick={() => { hashHistory.push('app')}}>PRODUCTS</a></li>
                         <li><a href="#">TECHNOLOGY </a></li>
                         <li><a href="">BLOGS</a></li>
                         <li><a href="#">ABOUT US</a></li>

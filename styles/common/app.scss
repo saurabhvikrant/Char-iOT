@@ -1,0 +1,159 @@
+
+/* --------------------- common section ----------------------- */
+
+.heading-title{color:#000;line-height: 45px;}
+
+.img-width{width:100%;}
+.zero-padding{padding:0;}
+.left-zero-padding{padding-left:0;}
+.right-zero-padding{padding-right:0;}
+.zero-margin{margin:0;}
+.section-padding{padding:50px 0;}
+.text-white{color:#fff !important;}
+.box-shadow{box-shadow:0 0 10px #ccc;}
+.border-radius{border-radius:50%;}
+.border-radius-25{border-radius:25px;}
+.border-radius-4{border-radius:4px;}
+.bg-white{background:#fff;}
+.bg-grey{background:#f5f5f5;}
+.p50{padding:50px 0;}
+.p80{padding:80px 0;}
+.p40{padding:40px 0;}
+.p30{padding:30px 0;}
+.p25{padding:25px 0;}
+.p20{padding:20px 0;}
+.p15{padding:15px 0;}
+.p10{padding:10px 0;}
+.m10{margin:10px 0;}
+.mb10{margin-bottom:10px;}
+.border{border:1px solid #d2d2d2}
+.border-bottom{border-bottom:1px solid #bfbfbf;}
+.border-top{border-top:1px solid #bfbfbf;}
+.border-right{border-right:1px solid #bfbfbf;}
+.f16{font-size:16px;}
+.btn-outline-primary{background:none;color:#215c83;}
+.btn-flat{border-radius:0;}
+
+
+
+/* --------------------- story photo section ----------------------- */
+
+.story-photo h4, .hover-box-shadow h4{margin:0;padding-top:25px;font-weight:700;}
+
+
+
+/* --------------------- progress bar section ----------------------- */
+
+.pie-title-center {
+  display: inline-block;
+  position: relative;
+  padding-top: 10px;
+}
+
+.pie-value {
+	display: block;
+    position: absolute;
+    font-size: 15px;
+    height: 80px;
+    top: 42%;
+    font-weight: bold;
+	color:#225c82;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+#demo-pie-2 .pie-value,#demo-pie-4 .pie-value,#demo-pie-6 .pie-value{color:#4fa73f;}
+
+
+
+
+
+
+
+
+/* --------------------- Footer section ----------------------- */
+
+footer{background-color:#225c82; padding:70px 0;}
+footer p{color:#fff;}
+footer h3{color:#fff; text-transform:uppercase; padding-bottom:50px; font-size:20px; margin:0;}
+footer ul{padding:0; list-style:none;}
+footer ul li{ line-height:30px; padding:0 0 0 15px; color:#fff; }
+footer ul li a{color:#fff;}
+footer ul li a:hover{color:#fff; text-decoration:underline;}
+
+.footer-social ul li{display:inline-block; margin:0 5px;}
+.footer-social ul li a{color:#fff; font-size:22px;}
+
+.footer-bottom{
+	background-color:#10466a;
+	padding: 24px 0;
+}
+.footer-bottom p{margin:0;color:#fff;}
+
+
+.navigation ul li a {
+    color: #000;
+	font-size:16px;
+}
+
+
+
+
+/* --------------------- Company Page section ----------------------- */
+.company-page-middle .nav-tabs li{width:33%; text-align:center;}
+.company-page-middle .nav-tabs{margin-bottom:30px;}
+.company-page-middle .nav-tabs>li>a{font-size:16px;font-weight:normal;color:#000;}
+.company-page-middle .nav-tabs>li.active>a{border:none;color:#225c82;}
+.company-page-middle  .nav-tabs li.active:hover{box-shadow:0 2px 5px #ccc;}
+.company-page-middle .nav>li>a:focus,.company-page-middle .nav>li>a:hover{background:none;}
+
+// .section-1{background:url(..images/bg-1.jpg) fixed no-repeat center;background-size:cover; padding:100px 0;}
+.section-1 h1{color:#fff;}
+ .section-1 h3{color:#999;font-size:20px;}
+
+ /*Header*/
+ .navigation ul li a{
+  font-size: 14PX;
+ }
+ .nav>li{
+  padding: 5px 0px 0px 17px;
+}
+#header-top-login{
+    outline: none;
+    padding: 6px 39px;
+    box-shadow: 8px 11px 14px 3px rgba(0,0,0,0.15);
+    margin-top: 13px;
+}
+
+.nav{
+  padding-left: 50px;
+}
+a#banner-know-more-tab{
+  padding: 13px 80px;
+    font-size: 18px;
+}
+#banner-bottom-header{
+  box-shadow: 0px 8px 14px 3px rgba(0,0,0,0.15);
+  margin-bottom: 21px;
+}
+
+/*How It works Section*/
+.story-photo h2 {
+    font-size: 51px;
+    color: #565e6c;
+}
+.how-it-work-heading {
+    padding-top: 58px;
+}
+.how-it-work-heading h4 {
+    font-size: 19px;
+    color: #565e6c;
+}
+p.how-it-work-content {
+    font-size: 14px;
+    color: #565e6c;
+   margin-top: 18px;
+}
+.logo-header img{
+  width: 100%;
+}
