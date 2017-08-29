@@ -1,10 +1,10 @@
 # react-webpack-babel
-Simple React Webpack Babel Starter Kit
+Simple React Webpack Babel Project
 
 Tired of complicated starters with 200MB of dependencies which are hard to understand and modify?
 
 Try this is a simple [React](https://facebook.github.io/react/), [Webpack](http://webpack.github.io/) and [Babel](https://babeljs.io/) application with nothing else in it.
-
+### charIoT
 ### What's in it?
 
 * Simple src/index.jsx and src/index.css (local module css).
@@ -19,7 +19,7 @@ Try this is a simple [React](https://facebook.github.io/react/), [Webpack](http:
 * Fork and clone the project:
 
 ```
-git clone https://github.com/alicoding/react-webpack-babel.git
+git clone https://github.com/codersaurabh/chariot.git
 ```
 
 * Then install the dependencies:
