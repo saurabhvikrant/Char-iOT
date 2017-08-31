@@ -1,0 +1,41 @@
+{
+  "navData": [
+        {
+          "title": "Header",
+          "link": "#",
+          "mainMenuFields": [
+            {
+              "name": "Glossary",
+              "link": "",
+            },
+            {
+              "name": "Information Assets",
+              "link": "",
+            },
+            {
+              "name": "Labels",
+              "link": "/ibm/iis/igc/labels"
+            },
+            {
+              "name": "Queries",
+              "link": "#"
+            },
+            {
+              "name": "Collections",
+              "link": "/ibm/iis/igc/collection"
+            },
+            {
+              "name": "Data Integration",
+              "link": "#"
+            },
+            {
+              "name": "Info Governance Dashboard",
+              "link": "#"
+            },
+            {
+              "name": "Administration",
+              "link": "/ibm/iis/igc/administration"
+            }
+          ]
+        }
+      ],

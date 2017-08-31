@@ -35,7 +35,10 @@ export default class Home extends React.Component {
             <div className="row">
               <div className="col-md-8 baner-inner-content">
                 <h1>Smart World-Think IoT & beyond</h1>
-                <p>Chariot welcomes you to the world of possibilities where we take internet of<br/> things to next level of inovation. Connect everything through our smart<br/> products and manage resources like you have never done before.</p>
+                <p>Chariot welcomes you to the world of possibilities where we take internet of
+                  <br/> things to next level of inovation. Connect everything through our smart
+                    <br/> products and manage resources like you have never done before.
+                    </p>
                 <p className="p20">
                   <a  className="btn btn-primary btn-lg
                     border-radius-25"

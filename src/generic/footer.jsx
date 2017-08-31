@@ -1,8 +1,9 @@
 import React from 'react';
 import '../../styles/index.scss';
-import footer from '../images/footer-logo.png';
+import {hashHistory } from 'react-router'
 
-export default class Footer extends React.Component {
+
+export default class Footer extends React.Component  {
   constructor (props) {
     super(props);
   }
@@ -16,30 +17,30 @@ export default class Footer extends React.Component {
                  <div className="col-md-4 logo-sec">
                     <ul>
                        <li className="logo-header">
-                          <img src={footer}></img>
+                          {this.footerImage.footer}
                        </li>
                        <li><i className="fa fa-flag-o" aria-hidden="true">
-                          </i>{"K-88 A, Second Floor,"}<br/>&nbsp; &nbsp;&nbsp;{"New Mahaveer Nagar,"} <br/>
-                          &nbsp; &nbsp;&nbsp; {"Tilak Nagar,"}<br/> &nbsp; &nbsp;&nbsp;{ " West Delhi New Delhi, "} <br/>
-                          &nbsp; &nbsp;&nbsp; {"India - 110018 "}
+                       </i>{this.footerData.line1}<br/>&nbsp; &nbsp;&nbsp;{this.footerData.line2} <br/>
+                     &nbsp; &nbsp;&nbsp; {this.footerData.line3}<br/> &nbsp; &nbsp;&nbsp;{this.footerData.line4}<br/>
+                   &nbsp; &nbsp;&nbsp; {this.footerData.line5}
                        </li>
                        <li><i className="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;{"info@chariotco.in"}</li>
                        <li><i className="fa fa-mobile mobile-style" aria-hidden="true"></i>&nbsp; {"+91-9785967626"}<br/>
-                          &nbsp; &nbsp;&nbsp; {"+91-9785967626"}
+                          &nbsp; &nbsp;&nbsp; {}
                        </li>
                     </ul>
                  </div>
                  <div className="col-md-3 compny-sec">
-                    <h3>COMPANY</h3>
+                    {this.footerHead.footer1}
                     <ul>
-                       <li><a href="#">Products</a></li>
-                       <li><a href="#">Technology</a></li>
-                       <li><a href="#">Blogs</a></li>
-                       <li><a href="#">About Us</a></li>
+                       <li><a href="#"onClick={() => { hashHistory.push('/')}}>Products</a></li>
+                       <li><a href="#"onClick={() => { hashHistory.push('/')}}>Technology</a></li>
+                       <li><a href="#"onClick={() => { hashHistory.push('/')}}>Blogs</a></li>
+                       <li><a href="#"onClick={() => { hashHistory.push('/')}}>About Us</a></li>
                     </ul>
                  </div>
                  <div className="col-md-3 compny-sec">
-                    <h3>SUPPORT</h3>
+                     {this.footerHead.footer2}
                     <ul>
                        <li><a href="#">Help</a></li>
                        <li><a href="#">Feedback</a></li>
@@ -48,7 +49,7 @@ export default class Footer extends React.Component {
                     </ul>
                  </div>
                  <div className="col-md-2 compny-sec">
-                    <h3>REACH</h3>
+                    {this.footerHead.footer3}
                     <ul>
                        <li><a href="#">Media</a></li>
                        <li><a href="#">Careers</a></li>
@@ -66,10 +67,11 @@ export default class Footer extends React.Component {
               </div>
               <div className="col-md-4 wow fadeInLeft text-left footer-social text-center">
                  <ul>
-                    <li><a href="#"><i className="fa fa-facebook icon-style" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i className="fa fa-linkedin icon-style" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i className="fa fa-twitter icon-style" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i className="fa fa-instagram icon-style" aria-hidden="true"></i></a></li>
+                    <li><a href={this.footerData.flink}>
+                      <i className="fa fa-facebook icon-style" aria-hidden="true"></i></a></li>
+                    <li><a href={this.footerData.linkdin}><i className="fa fa-linkedin icon-style" aria-hidden="true"></i></a></li>
+                    <li><a href={this.footerData.twitter}><i className="fa fa-twitter icon-style" aria-hidden="true"></i></a></li>
+                    <li><a href={this.footerData.insta}><i className="fa fa-instagram icon-style" aria-hidden="true"></i></a></li>
                  </ul>
               </div>
               <div className="col-md-4 text-right wow fadeInRight text-right">
