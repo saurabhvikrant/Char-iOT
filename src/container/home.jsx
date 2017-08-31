@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from '../generic/footer';
 import '../../styles/index.scss';
 import { hashHistory } from 'react-router'
 import Header from '../generic/header';
+import Footer from '../generic/footer';
 import BodySection from '../components/bodySection';
 import IotSection from '../components/iotSection';
 import AppSection from '../components/appSection';
@@ -48,13 +48,13 @@ export default class Home extends React.Component {
                             </div>
                         </div>
                     </div>
-          </section>
-        <BodySection/>
-        <IotSection/>
-        <FlexBox/>
-        <AppSection/>
-        <Footer/>
-      </div>
+                  </section>
+                  <BodySection/>
+                  <IotSection/>
+                  <FlexBox/>
+                  <AppSection/>
+                  <Footer/>
+    </div>
     )
   }
 }

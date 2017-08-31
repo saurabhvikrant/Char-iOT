@@ -5,12 +5,22 @@ import apple from '../images/apple.png';
 import device from '../images/device.png';
 import lorawan from '../images/lorawan.png';
 
+const BodyDataJson = require('./home.json');
+
 
 export default class AppSection extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
+    this.state = {
+    BodyDataJson: '',
+    }
   }
   render() {
+    let BodyData = BodyDataJson.body.map((val, i) => {
+      return (
+        <li key={i}><a href="">{val.name}</a></li>
+        );
+      });
     return (
   <section className="story-photo section-padding">
      <div className="container">
@@ -21,14 +31,7 @@ export default class AppSection extends React.Component {
                  <div className="col-md-7">
                     <div className="col-md-12 app-list">
                        <ul>
-                          <li>Complete water consumption analytics.</li>
-                          <li>Real time leakage alert to prevent wastage of water.</li>
-                          <li>Remote shut-off button cuts off main line. </li>
-                          <li>Online bill generation depending upon usage and online degital payment option.</li>
-                          <li>Impact league: Reward challenge to promote water saving and creating awareness.</li>
-                          <li>For any assistance on water supply or leakage issue plumber on demand can be avialed.</li>
-                          <li>Easy to install can be easily mounted.</li>
-                          <li>Preinstalled long life battery to hold upto 8 years.</li>
+                         {BodyData}
                        </ul>
                     </div>
                     <div className="col-md-12 download-style">

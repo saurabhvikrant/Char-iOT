@@ -1,9 +1,67 @@
 {
-  "headData": [
+      "header": [
             {
               "name": "Product",
-              "link": "",
+              "link": "app"
             },
-            
+            {
+              "name": "Technology",
+              "link": ""
+            },
+            {
+              "name": "Blogs",
+              "link": ""
+            },
+            {
+              "name": "About Us",
+              "link": ""
+            }
       ],
-}
+      "footer": [
+            {
+              "name": "Product",
+              "link": ""
+            },
+            {
+              "name": "Technology",
+              "link": ""
+            },
+            {
+              "name": "Blogs",
+              "link": ""
+            },
+            {
+              "name": "About Us",
+              "link": ""
+            }
+      ],
+      "nextFooter": [
+            {
+              "name": "Help",
+              "link": ""
+            },
+            {
+              "name": "Feedback",
+              "link": ""
+            },
+            {
+              "name": "FAQ’s",
+              "link": ""
+            },
+            {
+              "name": "Terms & Conditions",
+              "link": ""
+            }
+      ],
+      "mediaFooter": [
+            {
+              "name": "Media",
+              "link": ""
+            },
+            {
+              "name": "Careers",
+              "link": ""
+            }
+
+        ]
+    }
