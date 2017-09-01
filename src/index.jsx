@@ -1,11 +1,13 @@
 import React from 'react';
-import {render} from 'react-dom';
+import 'sweetalert';
+import 'sweetalert/dist/sweetalert.css';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-
-import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import Home from './container/home'
 import App from './container/app'
+import ContactUsContainer from './container/contactUsContainer'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+
 injectTapEventPlugin();
 
 
@@ -19,6 +21,7 @@ ReactDOM.render(
     <Route path='/' >
         <IndexRoute component={Home}/>
         <Route path='app' component={App}/>
+        <Route path='contactus' component={ContactUsContainer}/>
     </Route>
 </Router>,
  document.getElementById("app"));

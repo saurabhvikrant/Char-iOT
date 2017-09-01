@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/index.scss';
 import computer from '../images/computer.jpg';
 
 const TestData = require('./home.json');

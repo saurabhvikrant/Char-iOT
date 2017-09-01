@@ -22,6 +22,7 @@
 .right-zero-padding{padding-right:0;}
 .zero-margin{margin:0;}
 .section-padding{padding:50px 0;}
+.section-padding10{padding:95px 0;}
 .text-white{color:#fff !important;}
 .box-shadow{box-shadow:0 0 10px #ccc;}
 .border-radius{border-radius:50%;}
@@ -137,6 +138,8 @@ footer ul li a:hover{color:#fff; text-decoration:underline;}
  /*Header*/
  .navigation ul li a{
   font-size: 14PX;
+  line-height: 39px;
+
  }
  .nav>li{
   padding: 5px 0px 0px 17px;
@@ -199,7 +202,95 @@ p.how-it-work-content {
     letter-spacing: 0px;
 }
 .varune-style p {
-    margin-top: -10px;
+    margin-top: -26px;
+    font-size: 21px;
+}
+.varune-style h3 {
+    font-size: 51.51px;
+    color: #d8d8d6;
+    margin-top: -4px;
+}
+ul.navigation-tab.nav.nav-tabs {
+    padding-left: 0px;
+}
+.company-page-middle  .nav-tabs li.active:hover{
+  box-shadow: none;
+}
+.company-page-middle .nav-tabs li{
+  width: auto;
+}
+.nav-tabs{
+  border-bottom: none;
+}
+
+li.active {
+    border-bottom: 2px solid #f68c21;
+}
+.list-section ul {
+    list-style: disc;
+}
+.list-section ul li {
+    padding: 7px 0px;
+}
+.chart-section img {
+    width: 423px;
+    float: right;
+}
+.chart-section{
+      padding-top: 47px;
+}
+.flex-viewport{
+  box-shadow: 0px 7px 20px #ccc;
+}
+.app-list ul {
+    list-style: disc;
+}
+.app-list ul li {
+    padding: 4px 0px;
+}
+.app-list {
+    padding-top: 20px;
+
+}
+.download-style h3 {
+    color: #d8d9d7;
+    font-size: 51.51px;
+    padding: 10px 21px;
+}
+.icon-app ul li {
+    display: inline-block;
+    margin: 0px 0px 0px 30px;
+
+}
+.icon-app {
+    margin-left: -40px;
+}
+.download-style {
+    padding-top: 63px;
+}
+.icon-app img {
+    width: 80px;
+}
+.partne-section h2 {
+    text-align: center;
+    color: #d8d9d7;
+    letter-spacing: 1px;
+}
+.partner-img-section ul {
+    margin: 0;
+}
+.partner-img-section ul li {
+    display: inline-block;
+    padding: 0px 41px;
+}
+/*Products*/
+.products-heading h2 {
+    font-size: 51.51px;
+    color: #565e6c;
+    letter-spacing: 0px;
+}
+.varune-style p {
+    margin-top: 0px;
     font-size: 21px;
 }
 .varune-style h3 {
@@ -317,7 +408,161 @@ p.footer-botem-style {
 }
 footer ul li{
   padding: 0 0 0 0px;
+}/*About us*/
+
+h2.heading-title-about {
+    margin-left: 30px;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
 }
+.about-img img {
+    width: 100%;
+    padding-bottom: 120px;
+}
+p.content-about {
+    padding-bottom: 80px;
+}
+.mission-style h3 {
+    font-size: 51.51px;
+}
+.mission-style p {
+    padding-bottom: 5px;
+}
+.down-arrow-about img {
+    width: 48px;
+    margin-left: 86px;
+    margin-top: 30px;
+}
+/*Squad section*/
+
+.men-box {
+    width: 240px;
+    height: 240px;
+    background-color: #ccc;
+    border-radius: 100%;
+    padding: 20px;
+     margin: 0px auto;
+}
+.men-box img {
+    border: 17px solid #fff;
+    border-radius: 100%;
+}
+.heading-title-squad.text-center {
+    padding-bottom: 63px;
+    margin-top: -25px;
+}
+h4.text-center.name-of-dp {
+    font-size: 21px;
+}
+h6.co-founder-style {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 4px;
+    padding-bottom: 26px;
+}
+.partner-img-section ul li:first-child {
+    position: relative;
+    right: 52px;
+}
+.partner-img-section ul li:last-child {
+    position: relative;
+    left: 52px;
+}
+.partner-img-section ul li:last-child {
+    position: relative;
+    left: 41px;
+}
+.partne-section-about h2 {
+    text-align: center;
+    color: #d8d9d7;
+    letter-spacing: 1px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-bottom: 36px;
+    margin-top: 160px;
+}
+footer {
+    background-color: #383938;
+    margin-top: -10px;
+}
+
+/**Contact us**/
+
+.heading-title-contact {
+    font-size: 51.51px;
+}
+.contact-img {
+    margin-top: 57px;
+}
+.contact-img img {
+    width: 100%;
+}
+.inquries-style {
+    padding-top: 50px;
+}
+.inquries-style h3 {
+    font-size: 51.51px;
+}
+.contact-form .form-group {
+    padding-bottom: 2px;
+}
+input#form-name {
+    font-weight: 200;
+    border-radius: 7px;
+    border-color: #565e6c;
+    font-size: 18px;
+    color: #565e6c;
+    letter-spacing: -0.5px;
+}
+input#form-email{
+     font-weight: 200;
+    border-radius: 7px;
+    border-color: #565e6c;
+    font-size: 18px;
+    color: #565e6c;
+    letter-spacing: -0.5px;
+}
+textarea#comment{
+     font-weight: 200;
+    border-radius: 7px;
+    border-color: #565e6c;
+    font-size: 18px;
+    color: #565e6c;
+    letter-spacing: -0.5px;
+    resize: none;
+}
+button#sen-tab {
+    background-color: #0b79bf;
+    padding: 13px 76px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 400;
+    outline: none;
+    border:none;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    box-shadow: 8px 14px 18px -1px rgba(0,0,0,0.15);
+  }
+  button#sen-tab:hover {
+    background-color: #0d6daa;
+    transition: 0.3s;
+}
+.map-section {
+    float: right;
+}
+.navbar{
+    margin-bottom: 0px;
+    border: none;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #333333;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #333333;
+}
+
 
 /*Banner Section*/
 

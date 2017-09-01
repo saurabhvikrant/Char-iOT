@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../styles/index.scss';
+
 import windows from '../images/window.png';
 import server from '../images/server1.png';
 import apple from '../images/apple.png';

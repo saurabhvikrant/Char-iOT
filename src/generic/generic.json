@@ -2,19 +2,19 @@
       "header": [
             {
               "name": "Product",
-              "link": "app"
+              "link": "#/app"
             },
             {
               "name": "Technology",
-              "link": ""
+              "link": "#/app"
             },
             {
               "name": "Blogs",
-              "link": ""
+              "link": "#/"
             },
             {
               "name": "About Us",
-              "link": ""
+              "link": "#/contactus"
             }
       ],
       "footer": [
@@ -49,7 +49,7 @@
               "link": ""
             },
             {
-              "name": "Terms & Conditions",
+              "name": "Terms&Conditions",
               "link": ""
             }
       ],
