@@ -13,6 +13,7 @@ export default class Header extends React.Component  {
     this.state = {
     TestData: '',
     }
+    this.toggleCollapse = this.toggleCollapse.bind(this);
   }
 
   toggleCollapse () {
@@ -24,6 +25,14 @@ export default class Header extends React.Component  {
      }
   }
   render() {
+    $(window).scroll(function(){
+      let scrollAmount = $(window).scrollTop();
+      if (scrollAmount > 10 ){
+        $('#header').addClass('header-sticker box-shadow');
+      } else {
+        $('#header').removeClass('header-sticker box-shadow');
+      }
+    })
     let headerData = TestData.header.map((val, i) => {
       return (
         <li key={i}><a href={val.link}>{val.name}</a></li>
@@ -34,7 +43,7 @@ export default class Header extends React.Component  {
       <div className="container">
          <div className="row">
            <div className="col-md-12">
-            <div className="navbar navbar-default navbar-fixed-top p10 ">
+            <div className="navbar navbar-default navbar-fixed-top p10" id="header">
                <div className="logo-header col-md-1 text-center">
                 <a href=""> <img src={logo} className="img-width"></img></a>
                </div>
