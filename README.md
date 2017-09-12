@@ -1,5 +1,5 @@
 # react-webpack-babel
-Simple React Webpack Babel Project
+charIoT Project
 
 Tired of complicated starters with 200MB of dependencies which are hard to understand and modify?
 

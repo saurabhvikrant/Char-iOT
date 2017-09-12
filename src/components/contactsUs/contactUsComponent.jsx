@@ -28,9 +28,9 @@ export default class ContactUsComponent extends React.Component {
                   <div className="col-md-6 ">
                      <div className="col-md-12 app-list">
                         <label className="heading-title-contact">Contact us</label>
-                        <p className="content-of-contact">
+                        <span className="content-of-contact">
                         {contactUsData}
-                        </p>
+                      </span>
                      </div>
                      <div className="col-md-12 inquries-style">
                          <label className="heading-title-contact">Inquiries</label>

@@ -1,5 +1,6 @@
 {
       "body": [
+
             {
               "name": "Complete water consumption analytics.",
               "link": ""
@@ -32,7 +33,14 @@
               "name": "E  Preinstalled long life battery to hold upto 8 yearss",
               "link": ""
             }
+        ],
 
+        "head":[
+          {
+          "head": "Varune",
+          "subhead": "Smart water management",
+          "price": "$69.00"
+          }
         ],
           "howItWorks" : [
             {

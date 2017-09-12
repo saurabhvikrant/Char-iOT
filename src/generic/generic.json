@@ -1,20 +1,20 @@
 {
       "header": [
             {
-              "name": "Product",
+              "name": "PRODUCT",
+              "link": "#/product"
+            },
+            {
+              "name": "PLATFORM",
               "link": "#/app"
             },
             {
-              "name": "Technology",
-              "link": "#/app"
-            },
-            {
-              "name": "Blogs",
-              "link": "#/"
-            },
-            {
-              "name": "About Us",
+              "name": "BLOGS",
               "link": "#/contactus"
+            },
+            {
+              "name": "ABOUT US",
+              "link": "#/aboutus"
             }
       ],
       "footer": [

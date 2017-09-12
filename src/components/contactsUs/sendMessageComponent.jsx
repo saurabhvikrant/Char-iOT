@@ -14,7 +14,6 @@ export default class SendMessageComponent extends React.Component {
     this.sendMessage = this.sendMessage.bind(this);
   }
     sendMessage(){
-    console.log(this.state.name, this.state.email, this.state.query);
     // axios.post('/create', {name: this.state.name, email: this.state.email, query: this.state.query})
     //     .then(function(response){
     //       console.log(response);
@@ -82,7 +81,7 @@ export default class SendMessageComponent extends React.Component {
                        </div>
                        <div className="col-sm-6 col-md-8 map-section">
                           <div className="col-md-12">
-                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447989.43115232297!2d76.81115297302966!3d28.692116453166058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d047309fff32f%3A0xfc5606ed1b5d46c3!2sDelhi!5e0!3m2!1sen!2sin!4v1503915254004"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.875657604913!2d77.08216276468029!3d28.63348853241735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0497d3d140e3%3A0x28cb88a1b56062b4!2sNew+Mahavir+Nagar%2C+Tilak+Nagar%2C+Delhi%2C+110018!5e0!3m2!1sen!2sin!4v1504614271067"
                              width="100%"
                              height="400"
                              frameBorder="0"

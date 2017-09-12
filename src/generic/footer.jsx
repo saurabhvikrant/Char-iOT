@@ -13,6 +13,7 @@ export default class Footer extends React.Component  {
     }
   }
   render() {
+
     let footerData = TestData.footer.map((val, i) => {
       return (
         <li key={i}><a href="">{val.name}</a></li>
@@ -41,7 +42,9 @@ export default class Footer extends React.Component  {
                               </li>
                               <li>
                                   <i className="fa fa-flag-o" aria-hidden="true"></i>
-                                   K-88 A, Second Floor, New Mahaveer Nagar, Tilak Nagar,<br/>&nbsp; &nbsp;&nbsp; West Delhi New Delhi, India - 110018
+                                   K-88 A, Second Floor,
+                                   New Mahaveer Nagar, Tilak Nagar,<br/>&nbsp; &nbsp;&nbsp;
+                                   West Delhi New Delhi, India - 110018
                               </li>
                               <li>
                                   <i className="fa fa-envelope-o" aria-hidden="true">

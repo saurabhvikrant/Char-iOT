@@ -1,11 +1,13 @@
 import React from 'react';
 import logo from '../images/logo.png'
 import '../../styles/index.scss';
-import {hashHistory } from 'react-router'
+window.jQuery = require('jquery');
+window.$ = require('jquery');
 import $ from 'jquery';
+const baseUrl = 'http://localhost:8888';
+
 const TestData = require('./generic.json');
 
-const baseUrl = 'http://localhost:8888';
 
 export default class Header extends React.Component  {
   constructor(props) {
@@ -13,17 +15,8 @@ export default class Header extends React.Component  {
     this.state = {
     TestData: '',
     }
-    this.toggleCollapse = this.toggleCollapse.bind(this);
   }
 
-  toggleCollapse () {
-    if ($(window).scrollTop() > 100 ){
-       $('header').addClass('header-sticker');
-     } else {
-       $('header').removeClass('header-sticker');
-
-     }
-  }
   render() {
     $(window).scroll(function(){
       let scrollAmount = $(window).scrollTop();
@@ -43,7 +36,7 @@ export default class Header extends React.Component  {
       <div className="container">
          <div className="row">
            <div className="col-md-12">
-            <div className="navbar navbar-default navbar-fixed-top p10" id="header">
+            <div className="navbar navbar-default navbar-fixed-top p10 " id="header">
                <div className="logo-header col-md-1 text-center">
                 <a href=""> <img src={logo} className="img-width"></img></a>
                </div>
