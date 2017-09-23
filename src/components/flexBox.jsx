@@ -15,7 +15,7 @@ export default class FlexBox extends React.Component {
     let FlexBoxData = TestData.body.map((val, i) => {
       return (
         <div key={i} className=" list-section col-md-12 zero-padding">
-           <ul >
+           <ul style={{'marginLeft': '5%'}}>
              <li>{val.name}</li>
            </ul>
          </div>
@@ -24,7 +24,7 @@ export default class FlexBox extends React.Component {
       let FlexBoxHead = TestData.head.map((data, k) => {
         return (
           <div key={k} className="row">
-             <div className="col-md-6 varune-style">
+             <div className="col-md-6 varune-style"  style={{"marginLeft": "2%"}}>
                 <h2>{data.head}</h2>
                 <h4>{data.subhead}</h4>
                 <h3>{data.price}</h3>
@@ -36,7 +36,7 @@ export default class FlexBox extends React.Component {
         <section id ="myproduct" className="p50">
      <div className="container">
         <div className="row">
-           <div className="products-heading col-md-12 wow fadeInUp">
+           <div className="products-heading col-md-12 wow fade-in-up">
               <h2 className="heading-title text-center">Products</h2>
               <div id="myCarousel" className="carousel slide" data-ride="carousel">
                  <ol className="carousel-indicators">
@@ -49,7 +49,7 @@ export default class FlexBox extends React.Component {
                        <ul className="slides">
                           <li>
                              <div className="col-md-12">
-                                <div className="col-md-7 company-page-middle zero-padding">
+                                <div className=" list-section col-md-6 zero-padding">
                                    {FlexBoxHead}
                                    <ul className="navigation-tab nav nav-tabs">
                                       <li className="active"><a data-toggle="tab" href="#created">FEATURES</a></li>

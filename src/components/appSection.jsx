@@ -5,7 +5,6 @@ import windows from '../images/window.png';
 import server from '../images/server1.png';
 import apple from '../images/apple.png';
 import device from '../images/device.png';
-import lorawan from '../images/lorawan.png';
 
 const BodyDataJson = require('./home.json');
 
@@ -49,20 +48,6 @@ export default class AppSection extends React.Component {
                  </div>
                  <div className="col-md-5">
                     <img src={device}></img>
-                 </div>
-                 <div className="row">
-                    <div className="col-sm-12 partne-section">
-                       <h2>Partners</h2>
-                    </div>
-                 </div>
-                 <div className="row">
-                    <div className="col-sm-12 partner-img-section">
-                       <ul className="row">
-                          <li className="col-sm-4"><img src={lorawan}></img></li>
-                          <li className="col-sm-4"><img src={lorawan}></img></li>
-                          <li className="col-sm-4"><img src={lorawan}></img></li>
-                       </ul>
-                    </div>
                  </div>
               </div>
            </div>

@@ -1,45 +1,41 @@
 {
-  "about":[
-        {
-          "data": " NRS Chariot Tech Pvt. Ltd. is an Indian start-up providing end-to -end-to end internet of things (Iot) and M2M solution.We at our inovation lab develop smart IoT based solution bringing substantial optimization in resource management and making our earth a better place to live-in.End-to-end solution include wireless sensor device(hardware) and customized application (software) soltion.Connect anthing  through our products and manage resources like you have never done before.",
-          "link": ""
-        }
-      ],
+  "about": [{
+    "data": " NRS Chariot Tech Pvt. Ltd. is an Indian start-up providing end-to -end-to end internet of things (Iot) and M2M solution.We at our inovation lab develop smart IoT based solution bringing substantial optimization in resource management and making our earth a better place to live-in.End-to-end solution include wireless sensor device(hardware) and customized application (software) soltion.Connect anthing  through our products and manage resources like you have never done before.",
+    "link": ""
+  }],
 
-      "body": [
-            {
-              "name": " NRS Chariot Tech Pvt. Ltd. is an Indian start-up providing end-to -end-to end internet of things (Iot) and M2M solution.We at our inovation lab develop smart IoT based solution bringing substantial optimization in resource management and making our earth a better place to live-in.End-to-end solution include wireless sensor device(hardware) and customized application (software) soltion.Connect anthing  through our products and manage resources like you have never done before.",
-              "link": ""
-            },
-            {
-              "heading": "Mission",
-              "subHead": "Creating diversified and simplified solutions using internet of things leading to optimized resource usage.",
-              "link": ""
-            },
-            {
-              "vision": "Vision",
-              "subData": "To Craete symbiotic ecosystem between technology and human race making earth a better place to live-in."
-            }
-        ],
+  "body": [{
+      "name": " NRS Chariot Tech Pvt. Ltd. is an Indian start-up providing end-to -end-to end internet of things (Iot) and M2M solution.We at our inovation lab develop smart IoT based solution bringing substantial optimization in resource management and making our earth a better place to live-in.End-to-end solution include wireless sensor device(hardware) and customized application (software) soltion.Connect anthing  through our products and manage resources like you have never done before.",
+      "link": ""
+    },
+    {
+      "heading": "Mission",
+      "subHead": "Creating diversified and simplified solutions using internet of things leading to optimized resource usage.",
+      "link": ""
+    },
+    {
+      "vision": "Vision",
+      "subData": "To Craete symbiotic ecosystem between technology and human race making earth a better place to live-in."
+    }
+  ],
 
-        "head":[
-          {
-          "heading": "Nilay Mehrotra",
-          "position":"Co-Founder & CEO",
-          "subhead": "A Serial Entrepreneur and one of the core team member for development of India’s ﬁrst Super Car DC Avanti.He has served as the Asst. V.P. for a Pune based startup Adclever.He has also been a public speaker and a motivator at platforms.He is an Alumni of UPES Dehradun.",
-          "link": ""
-        },
-        {
-        "heading": "Raj Garg",
-        "position":"Co-Founder & CTO",
-        "subhead": "A Serial Entrepreneur and one of the core team member for development of India’s ﬁrst Super Car DC Avanti.He has served as the Asst. V.P. for a Pune based startup Adclever.He has also been a public speaker and a motivator at platforms.He is an Alumni of UPES Dehradun.",
-        "link": ""
-      },
-      {
+  "head": [{
+      "heading": "Nilay Mehrotra",
+      "position": "Co-Founder & CEO",
+      "subhead": "A Serial Entrepreneur and one of the core team member for development of India’s ﬁrst Super Car DC Avanti.He has served as the Asst. V.P. for a Pune based startup Adclever.He has also been a public speaker and a motivator at platforms.He is an Alumni of UPES Dehradun.",
+      "link": ""
+    },
+    {
+      "heading": "Raj Garg",
+      "position": "Co-Founder & CTO",
+      "subhead": "A Serial Entrepreneur and one of the core team member for development of India’s ﬁrst Super Car DC Avanti.He has served as the Asst. V.P. for a Pune based startup Adclever.He has also been a public speaker and a motivator at platforms.He is an Alumni of UPES Dehradun.",
+      "link": ""
+    },
+    {
       "heading": "Siddhant Srivastava",
-      "position":"Co-Founder & COO",
+      "position": "Co-Founder & COO",
       "subhead": "A team player,who likes to lead team and deliver results.Working in marketing and management since college days and later worked with India's No. 1 Two-Wheeler Company,Hero Motocorp Ltd. He is an active environmentalist and a HBTI Kanpur alumni.",
       "link": ""
-      }
-    ]
-  }
+    }
+  ]
+}
