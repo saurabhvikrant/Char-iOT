@@ -1,21 +1,20 @@
-/*Responsive CSS*/
-
 @media all and (max-width: 768px) {
-  .navbar-default .navbar-toggle {
-    background-color: #f0ad4e;
-    border-color: #eea236;
-    margin-top: 12px;
-    padding: 6px 7px;
-  }
-  .navbar-default .navbar-toggle:hover {
-    background-color: #eea236;
-  }
-  .navbar-default .navbar-nav>.active>a {
-    background-color: white !important;
-    border-color: #eea236;
-    margin-top: 12px;
-    padding: 6px 7px;
-    ;
+  .navbar-default {
+    .navbar-toggle {
+      background-color: #f0ad4e;
+      border-color: #eea236;
+      margin-top: 12px;
+      padding: 6px 7px;
+      &:hover {
+        background-color: #eea236;
+      }
+    }
+    .navbar-nav > .active > a {
+      background-color: white !important;
+      border-color: #eea236;
+      margin-top: 12px;
+      padding: 6px 7px;
+    }
   }
   .navbar-inverse .navbar-collapse {
     border: none;
@@ -32,27 +31,28 @@
   }
   .navbar-default {
     background-color: transparent;
+    .navbar-toggle {
+      &:focus {
+        background-color: #f0ad4e !important;
+        border-color: #eea236 !important;
+      }
+      &:hover {
+        background-color: #f0ad4e !important;
+        border-color: #eea236 !important;
+        background-color: #fff;
+      }
+    }
   }
-  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #f0ad4e !important;
-    border-color: #eea236 !important;
-  }
-  .navbar-default .navbar-toggle:hover {
-    background-color: #fff;
-  }
-  .device-img img {
-    width: 100%;
-  }
-  .partner-img-section ul li img {
+  .device-img img, .partner-img-section ul li img {
     width: 100%;
   }
   .navbar-header {
     background: #fff;
   }
-  .nav>li {
+  .nav > li {
     padding: 0px 0px 0px 0px;
   }
-  .navbar-default .navbar-nav>li>a {
+  .navbar-default .navbar-nav > li > a {
     color: #fff;
     padding: 0px 15px;
     font-size: 12px;
@@ -71,23 +71,27 @@
   .icon-app img {
     width: 60px;
   }
-  .partner-img-section ul li:first-child {
-    right: 0px;
-    padding: 10px 41px;
+  .partner-img-section ul li {
+    &:first-child {
+      right: 0px;
+      padding: 10px 41px;
+    }
+    &:last-child {
+      left: 0px;
+    }
   }
-  .partner-img-section ul li:last-child {
-    left: 0px;
-  }
-  .footer-bottom .text-right, .footer-bottom .text-left {
-    text-align: center;
+  .footer-bottom {
+    .text-right, .text-left {
+      text-align: center;
+    }
   }
   footer {
     text-align: center;
     padding: 50px 0 30px 0;
-  }
-  footer h3 {
-    padding-bottom: 5px;
-    padding-top: 20px;
+    h3 {
+      padding-bottom: 5px;
+      padding-top: 20px;
+    }
   }
   .footer-social ul {
     padding: 15px 0;
@@ -112,7 +116,12 @@
     margin-bottom: 0px;
     padding: 6px 15px;
   }
-  input#form-name, input#form-email, textarea#comment {
+  input {
+    &#form-name, &#form-email {
+      font-size: 14px;
+    }
+  }
+  textarea#comment {
     font-size: 14px;
   }
   button#sen-tab {
@@ -127,19 +136,19 @@
   }
   .app-mobile-section {
     text-align: center;
-  }
-  .app-mobile-section img {
-    float: none;
-    margin-right: 0;
+    img {
+      float: none;
+      margin-right: 0;
+    }
   }
   .partner-img-section ul {
     padding: 0;
   }
   .flexslider {
     padding: 0 !important;
-  }
-  .flexslider .slides>li {
-    display: block !important;
+    .slides > li {
+      display: block !important;
+    }
   }
   .mobile-zero-padding {
     padding: 0;
@@ -151,10 +160,15 @@
   .list-section ul {
     padding-left: 15px;
   }
-  .zero-padding.how-it-style h2, .zero-padding.iot-platform-headeing.iot-style h2, .iot-platform-headeing h1 {
+  .zero-padding {
+    &.how-it-style h2, &.iot-platform-headeing.iot-style h2 {
+      padding-top: 0px;
+    }
+  }
+  .iot-platform-headeing h1 {
     padding-top: 0px;
   }
-  .company-page-middle .nav-tabs>li.active>a {
+  .company-page-middle .nav-tabs > li.active > a {
     padding: 10px 10px;
   }
   .app-list ul {

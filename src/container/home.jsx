@@ -59,6 +59,12 @@ export default class Home extends React.Component {
 				}, "veryslow");
 				return false;
 			});
+			$('#ScrollBottom').click(function() {
+				$("html, body").animate({
+					scrollBottom: 0
+				}, "slow");
+				return false;
+			});
 		});
 
 		$(window).scroll(function() {
@@ -66,8 +72,15 @@ export default class Home extends React.Component {
 
 			if (scrollAmount < 500) {
 				$('#ScrollTop').fadeOut("slow");
+				$('#ScrollBottom').fadeOut("slow");
 			} else {
 				$('#ScrollTop').fadeIn("slow");
+			}
+			if (scrollAmount < 20) {
+				$('#ScrollBottom').fadeOut("slow");
+				$('#ScrollTop').fadeOut("slow");
+			} else {
+				$('#ScrollBottom').fadeIn("slow");
 			}
 		});
 	}
@@ -99,8 +112,11 @@ export default class Home extends React.Component {
 				<div>
 				<Header/>
 				</div>
-				<div id="ScrollTop">
+				<div id="ScrollTop"  className="Scroller">
 					<i className="fa fa-chevron-up" aria-hidden="true"></i>
+				</div>
+				<div id="ScrollBottom" className="Scroller">
+					<i className="fa fa-chevron-Bottom" aria-hidden="true"></i>
 				</div>
 				<section className="section-1 bottom-m">
 					<div style={styles.root}>
