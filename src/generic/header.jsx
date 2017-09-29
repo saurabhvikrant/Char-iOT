@@ -4,8 +4,6 @@ import '../../styles/index.scss';
 window.jQuery = require('jquery');
 window.$ = require('jquery');
 import $ from 'jquery';
-const baseUrl = 'http://localhost:8888';
-
 const TestData = require('./generic.json');
 
 export default class Header extends React.Component {
@@ -15,7 +13,6 @@ export default class Header extends React.Component {
 			TestData: ''
 		}
 	}
-
 	render() {
 		$(window).scroll(function() {
 			let scrollAmount = $(window).scrollTop();
@@ -25,15 +22,10 @@ export default class Header extends React.Component {
 				$('#header').removeClass('header-sticker');
 			}
 		})
-		//   $('#myNavbar > ul.nav li a').click(function(e) {
-		//     var $this = $(this);
-		//     $this.parent().siblings().removeClass('active').end().addClass('.navbar-toggle');
-		//     e.preventDefault();
-		// });
 		let headerData = TestData.header.map((val, i) => {
 			return (
 				<li key={i}>
-					<a href={val.link}>{val.name}</a>
+					<a href={val.link} className={window.location.href.indexOf(val.link) >= 0 ? 'active' : ''}>{val.name}</a>
 				</li>
 			);
 		});
@@ -87,7 +79,6 @@ export default class Header extends React.Component {
 					</header>
 				</article>
 			</div>
-
 		)
 	}
 }
