@@ -4,6 +4,7 @@ import '../../styles/index.scss';
 window.jQuery = require('jquery');
 window.$ = require('jquery');
 import $ from 'jquery';
+import {notify} from '../services/notify';
 const TestData = require('./generic.json');
 
 export default class Header extends React.Component {
@@ -12,6 +13,10 @@ export default class Header extends React.Component {
 		this.state = {
 			TestData: ''
 		}
+		this.loginPage = this.loginPage.bind(this);
+	}
+	loginPage(){
+		notify('', 'Login Not Required Yet !', 'info');
 	}
 	render() {
 		$(window).scroll(function() {
@@ -44,34 +49,27 @@ export default class Header extends React.Component {
 						<div className="container-fluid">
 							<div className="row">
 								<div className="col-md-12 col-xs-12" id="header">
-									<div className="logo-header col-md-3 col-xs-6 text-left p10">
+									<div className="logo-header col-md-2 col-sm-2 col-xs-4 text-left">
 										<a href="#/">
 											<img src={logo} className="img-width"></img>
 										</a>
 									</div>
-									<div className="col-md-7 col-sm-10 col-xs-3">
-										<nav className="navbar navbar-default " style={{
-											'backgroundColor': '#FFFFFF'
-										}}>
+									<div className="col-md-8 col-sm-8 col-xs-1">
+										<nav className="navbar navbar-default " style={{'backgroundColor': '#FFFFFF'}}>
 											<div className="navbar-header">
-												<button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+												<button type="button" id="navbar-button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 													<span className="icon-bar"></span>
 													<span className="icon-bar"></span>
 													<span className="icon-bar"></span>
 												</button>
-												<div className="navigation collapse navbar-collapse" id="myNavbar">
-													<ul className="nav navbar-nav">
-														{headerData}
-													</ul>
+												<div className="navigation navigation-responsive collapse navbar-collapse" id="myNavbar">
+													<ul className="nav navbar-nav">{headerData}</ul>
 												</div>
 											</div>
-
 										</nav>
 									</div>
-									<div className="col-md-2 col-sm-1 col-xs-3 p10">
-										<a href="#" className="pull-right ">
-											<button type="button" className="btn btn-warning border-radius-25" id="header-top-login">Login</button>
-										</a>
+									<div className="col-md-2 col-sm-1 col-xs-5">
+											<button onClick={this.loginPage} type="button" className="btn btn-warning border-radius-25" id="header-top-login">Login</button>
 									</div>
 								</div>
 							</div>
