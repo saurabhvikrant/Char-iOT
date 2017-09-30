@@ -47,7 +47,7 @@ export default class AppSection extends React.Component {
                     </div>
                  </div>
                  <div className="col-md-5">
-                    <img src={device}></img>
+                    <img src={device} className="img-90"></img>
                  </div>
               </div>
            </div>

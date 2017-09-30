@@ -118,11 +118,6 @@
 
 /* --------------------- common section ----------------------- */
 
-.heading-title {
-  color: #000;
-  line-height: 45px;
-}
-
 .img-width {
   width: 100%;
 }
@@ -390,13 +385,6 @@ footer {
 
 .nav > li {
   padding: 5px 0 0 17px;
-}
-
-#header-top-login {
-  outline: none;
-  padding: 6px 39px;
-  box-shadow: 5px 11px 31px -1px rgba(0, 0, 0, 0.15);
-  margin-top: 13px;
 }
 
 .nav {
@@ -719,13 +707,6 @@ p.content-style {
 }
 
 /*About us*/
-
-h2.heading-title-about {
-  margin-left: 30px;
-  letter-spacing: 1px;
-  padding-bottom: 0;
-}
-
 .about-img img {
   width: 100%;
 }
@@ -764,10 +745,10 @@ p.content-about {
   }
 }
 
-h2.heading-title-squad.text-center {
-  padding-bottom: 26px;
-  padding-top: 80px;
-}
+// h2.heading-title-squad.text-center {
+//   padding-bottom: 26px;
+//   padding-top: 80px;
+// }
 
 h4.text-center.name-of-dp {
   font-size: 21px;
@@ -811,10 +792,10 @@ footer {
 
 /**Contact us**/
 
-.heading-title-contact {
-  font-size: 42.51px;
-  font-weight: 400 !important;
-}
+// .heading-title-contact {
+//   font-size: 42.51px;
+//   font-weight: 400 !important;
+// }
 
 .contact-img {
   margin-top: 57px;

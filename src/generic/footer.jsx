@@ -50,51 +50,45 @@ export default class Footer extends React.Component {
 				<section id="first-m" className="story-photo section">
 					<div className="container">
 						<div className="row">
-							<p>&nbsp;</p>
-							<p className="hidden-xs">&nbsp;</p>
-							<p className="hidden-xs">&nbsp;</p>
-							<div className="col-sm-12 partne-section">
-								<h2>Partners</h2>
-							</div>
+							<br /><br /><br /><br />
+							<div className="col-sm-12 partne-section"><h2>Partners</h2><br /></div>
 							<div className="row">
 								<div className="col-sm-12 partner-img-section">
 									<ul>
 										<li className='col-sm-4'>
-											<img src={lorawan}></img>
+											<img src={lorawan} className="img-90"></img>
 										</li>
 										<li className='col-sm-4'>
-											<img src={lorawan}></img>
+											<img src={lorawan} className="img-90"></img>
 										</li>
 										<li className='col-sm-4'>
-											<img src={lorawan}></img>
+											<img src={lorawan} className="img-90"></img>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<p className="hidden-xs">&nbsp;</p>
-							<p>&nbsp;</p>
-							<div className="col-sm-12 partne-section">
-								<h2>Media</h2>
-							</div>
+							<br /><br />
+							<div className="col-sm-12 partne-section"><h2>Media</h2><br /></div>
 							<div className="row">
 								<div className="col-sm-12 partner-img-section">
 									<ul>
 										<li className='col-sm-4'>
-											<img src={lorawan}></img>
+											<img src={lorawan} className="img-90"></img>
 										</li>
 										<li className='col-sm-4'>
-											<img src={lorawan}></img>
+											<img src={lorawan} className="img-90"></img>
 										</li>
 										<li className='col-sm-4'>
-											<img src={lorawan}></img>
+											<img src={lorawan} className="img-90"></img>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<p className="visible-xs">&nbsp;</p>
+							<br />
 						</div>
 					</div>
 				</section>
+				<br /><br />
 				<article className="section footer-article" id="section5">
 					<div id="stop" className="scrollTop">
 						<span>
@@ -112,7 +106,7 @@ export default class Footer extends React.Component {
 									<ul>
 										<li className="logo-header">
 											<a href="index.html">
-												<img src={footer}></img>
+												<img src={footer} className="img-90"></img>
 											</a>
 										</li>
 										<li>

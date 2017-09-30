@@ -2,9 +2,8 @@
 /* --------------------- 1st section ----------------------- */
 
 body {
-  font-family: "Lato", sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   font-size: 14px;
-  font-weight: 600 !important;
   letter-spacing: 1px;
   color: #575e6d;
   line-height: 1.22857143;
@@ -19,6 +18,7 @@ body {
 
 .img-width {
   width: 100%;
+  padding: 15px 0 5px 0;
 }
 
 .zero-padding {
@@ -223,11 +223,6 @@ footer {
   color: #FFFFFF;
 }
 
-.navigation ul li a {
-  color: #000;
-  font-size: 16px;
-}
-
 /* --------------------- Company Page section ----------------------- */
 
 .company-page-middle {
@@ -276,25 +271,69 @@ footer {
 }
 
 /*Header*/
-
-.navigation ul li a {
-  font-size: 14PX;
-  line-height: 39px;
-}
-
-.nav > li {
-  padding: 5px 0px 0px 17px;
-}
-
 #header-top-login {
   outline: none;
   padding: 6px 39px;
   box-shadow: 5px 11px 31px -1px rgba(0, 0, 0, 0.15);
-  margin-top: 13px;
+  margin-top: 3vw;
+  margin-left: 50%;
+  transform:translateX(-30%);
+}
+
+@media all and (max-width: 768px){
+  #header-top-login{
+    margin-left: 20%;
+    padding: 4px 29px;
+  }
+}
+
+.navigation ul li a {
+  font-size: 14px;
+  line-height: 39px;
+  color: #000;
+}
+
+@media all and (max-width: 992px){
+  .navigation ul li a {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+.nav > li {
+  padding: 5px 0px 0px 1vw;
 }
 
 .nav {
-  padding-left: 50px;
+  padding-left: 2vw;
+}
+.navigation ul, .navigation li {
+  display: block;
+  background-color: white;
+}
+@media all and (max-width: 768px){
+  .nav {
+    padding-right: 2vw;
+  }
+  .nav > li {
+    padding: 5px 1vw 0px 1vw;
+  }
+  .navbar-nav{
+    margin: 0px -15px;
+  }
+  .navigation-responsive {
+    min-width: 140px;
+    position: fixed;
+    top: 60px;
+    right: 3vw;
+    box-shadow:  0 10px 85px -15px grey;
+    z-index: 1;
+  }
+  #navbar-button{
+    position: fixed;
+    right: 1vw;
+    top: 2vw;
+  }
 }
 
 a#banner-know-more-tab {
@@ -325,8 +364,16 @@ p.how-it-work-content {
   color: #565e6c;
 }
 
+@media (max-width: 992px) and (min-width: 768px){
+  .logo-header{
+    margin-left: -15px;
+    transition: .3s;
+  }
+}
+
 .logo-header img {
-  width: 141px;
+  max-width: 125px;
+  width: 22vw;
 }
 
 .iot-platform-headeing h2 {
@@ -469,6 +516,7 @@ li.logo-header {
     width: 100px;
   }
   padding-bottom: 15px;
+
 }
 
 .logo-sec li {
@@ -791,10 +839,15 @@ button#sen-tab {
   margin-bottom: 0px;
   border: none;
 }
-
+.navbar-default .navbar-toggle{
+  margin-top: 0px;
+}
 .navbar-default .navbar-nav {
   > li > a {
     color: #333333 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-weight: 600;
+    opacity: 0.9;
     &:hover {
       color: #333333 !important;
     }
@@ -904,4 +957,8 @@ a.active-style {
   display: table;
   table-layout: fixed;
   width: 100%;
+}
+.img-90{
+  width: 90%;
+  height: auto;
 }

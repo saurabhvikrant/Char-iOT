@@ -9,16 +9,14 @@ import FlexBox from '../components/flexBox';
 
 import banner from '../images/banner.jpg';
 import choose from '../images/choose.jpg';
-import * as fullPage from '../js/bundle.js';
+// import * as fullPage from '../js/bundle.js';
 
 import {DefaultPlayer as Video} from 'react-html5video';
 import 'react-html5video/dist/styles.css';
 
 const TestData = require('../components/home.json');
 var styles = {
-	root: {
-		position: 'relative'
-	},
+	root: {position: 'relative'},
 	section_1: {
 		backgroundImage: `url(${banner})`,
 		overflow: 'hidden',
@@ -54,43 +52,29 @@ export default class Home extends React.Component {
 			$("#third").addClass('fade-in-up').delay(5500).removeClass('hidden');
 			$("#fourth").addClass('fade-in-up').delay(6500).removeClass('hidden');
 			$('#ScrollTop').click(function() {
-				$("html, body").animate({
-					scrollTop: 0
-				}, "veryslow");
+				$("html, body").animate({scrollTop: 0}, "veryslow");
 				return false;
 			});
 			$('#ScrollBottom').click(function() {
-				$("html, body").animate({
-					scrollBottom: 0
-				}, "slow");
+				$("html, body").animate({scrollBottom: 0}, "slow");
 				return false;
 			});
 		});
 
 		$(window).scroll(function() {
 			let scrollAmount = $(window).scrollTop();
-
 			if (scrollAmount < 500) {
 				$('#ScrollTop').fadeOut("slow");
 				$('#ScrollBottom').fadeOut("slow");
 			} else {
 				$('#ScrollTop').fadeIn("slow");
 			}
-			if (scrollAmount < 20) {
-				$('#ScrollBottom').fadeOut("slow");
-				$('#ScrollTop').fadeOut("slow");
-			} else {
-				$('#ScrollBottom').fadeIn("slow");
-			}
 		});
 	}
 	componentDidMount() {
 		$("#banner-know-more-tab").click(function() {
-			$('html, body').animate({
-				scrollTop: $("#section2").offset().top
-			}, 2000);
+			$('html, body').animate({scrollTop: $("#section2").offset().top}, 2000);
 		});
-
 	}
 
 	render() {
@@ -100,25 +84,21 @@ export default class Home extends React.Component {
 					<div className="col-md-12 how-it-work-heading">
 						<h4 className=" text-center">{val.header}</h4>
 						<img src={choose} className="img-width p20"></img>
-						<p className="how-it-work-content">
-							{val.content}
-						</p>
+						<p className="how-it-work-content">{val.content}</p>
 					</div>
 				</div>
 			);
 		});
 		return (
 			<div className="main">
-				<div>
-				<Header/>
-				</div>
+				<div><Header /></div>
 				<div id="ScrollTop"  className="Scroller">
 					<i className="fa fa-chevron-up" aria-hidden="true"></i>
 				</div>
-				<div id="ScrollBottom" className="Scroller">
+				{/*<div id="ScrollBottom" className="Scroller">
 					<i className="fa fa-chevron-Bottom" aria-hidden="true"></i>
-				</div>
-				<section className="section-1 bottom-m">
+				</div>*/}
+				{/*<section className="section-1 bottom-m">
 					<div style={styles.root}>
 						<Video style={styles.video_background} autoPlay loop muted controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']} onCanPlayThrough={() => {}}>
 							<source src='http://technobrix.in/newtbx/chariot/video/chariot_main_gif_screen.mp4' type="video/mp4"></source>
@@ -139,7 +119,7 @@ export default class Home extends React.Component {
 						</div>
 					</div>
 
-				</section>
+				</section>*/}
 				<div id='section2'>
 					<div >
 						<section className="story-photo section-padding">
