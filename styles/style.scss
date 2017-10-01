@@ -1034,9 +1034,11 @@ a.active-style {
   width: 100%;
 }
 .img-90{
-  margin: 10px 5%;
+  margin-top: 10px;
   width: 90%;
   height: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .max-width-150{
   max-width: 150px;

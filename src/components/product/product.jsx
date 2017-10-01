@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../styles/index.scss';
 import piechart from '../../images/pie-chart.png';
+import PropTypes from 'prop-types';
 import {hashHistory} from 'react-router'
 const TestData = require('./product.json');
 
@@ -140,9 +141,7 @@ export default class ProductPage extends React.Component {
 								<div className="carousel-inner">
 									<div className="item active">
 										<ul className="slides">
-											<li>
-												{list}
-											</li>
+											<li>{list}</li>
 										</ul>
 									</div>
 									<div className="item">
@@ -164,7 +163,6 @@ export default class ProductPage extends React.Component {
 						</div>
 					</div>
 				</div>
-
 				<div className="container">
 					<div className="row">
 						<div id='sec' className="products-heading col-md-12 wow fadeInUp">
@@ -180,9 +178,7 @@ export default class ProductPage extends React.Component {
 								<div className="carousel-inner">
 									<div className="item active">
 										<ul className="slides">
-											<li>
-												{list}
-											</li>
+											<li>{list}</li>
 										</ul>
 									</div>
 									<div className="item">
@@ -204,9 +200,10 @@ export default class ProductPage extends React.Component {
 						</div>
 					</div>
 				</div>
-
 			</section>
-
 		)
 	}
+}
+ProductPage.propTypes = {
+	Products: PropTypes.Array
 }

@@ -82,7 +82,7 @@ export default class Footer extends React.Component {
 						<div className="row">
 							<div id="sec-m" className="col-md-12 wow fade-in-up">
 								<div className="row">
-									<li className="logo-header"><a href="index.html"><img src={footer} className="img-90"/></a></li>
+									<li><a href="index.html"><img src={footer} className="img-90 max-width-150"/></a></li>
 								</div>
 								<div className="row">
 									<div className="col-md-4 logo-sec">

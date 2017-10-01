@@ -36,7 +36,7 @@ class ProductPageContainer extends React.Component {
 					<i className="fa fa-chevron-up" aria-hidden="true"></i>
 				</div>
 				<div id='top4' className="p50">
-					<LoadingIcon loading={this.props.frontend} {...this.props}/>
+					<LoadingIcon loading={showLoading} {...this.props}/>
 					<ProductPage Products={this.props.productList} {...this.props}/>
 				</div>
 				<Footer/>
@@ -44,6 +44,15 @@ class ProductPageContainer extends React.Component {
 		)
 	}
 }
+
+ProductPageContainer.propTypes = {
+	frontend: PropTypes.shape({
+		showLoading: PropTypes.number
+	}),
+	productList: PropTypes.Array,
+	onRequestProductList: PropTypes.func
+};
+
 function mapStateToProps(state) {
 	let products = state.productList.toJS();
 	let frontend = state.productList.toJS();
