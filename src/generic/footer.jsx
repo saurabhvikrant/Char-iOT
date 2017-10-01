@@ -45,13 +45,13 @@ export default class Footer extends React.Component {
 							<div className="col-sm-12 partner-img-section">
 								<div className='row'>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90 max-width-300"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90 max-width-300"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90 max-width-300"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 								</div>
 							</div>
@@ -59,13 +59,13 @@ export default class Footer extends React.Component {
 							<div className="col-sm-12 partner-img-section">
 								<div className='row p-y'>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90 max-width-300"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90 max-width-300"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90 max-width-300"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 								</div>
 							</div>

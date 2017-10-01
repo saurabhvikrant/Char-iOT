@@ -332,7 +332,7 @@ footer {
     top: 60px;
     right: 3vw;
     box-shadow:  0 10px 85px -15px grey;
-    z-index: 1;
+    z-index: 100;
   }
   #navbar-button{
     position: fixed;
@@ -674,7 +674,7 @@ a#banner-know-more-tab {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 100;
   background-color: #fff;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
@@ -985,6 +985,7 @@ a.active-style {
 .margin-top-p {
   position: absolute;
   top: 3vw;
+  z-index:-1;
   @media all and (max-width: 389px){
     top: -1vw;
     top: -21vw;
@@ -1024,7 +1025,7 @@ a.active-style {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  z-index: 9999;
+  z-index: 100;
   font-size: 18px;
 }
 
@@ -1037,8 +1038,10 @@ a.active-style {
   margin-top: 10px;
   width: 90%;
   height: auto;
-  margin-left: 50%;
-  transform: translateX(-50%);
+}
+.m-a-c{
+  margin-left: 40%;
+  transform: translateX(-40%);
 }
 .max-width-150{
   max-width: 150px;
