@@ -24,7 +24,7 @@ export default class AppSection extends React.Component {
       });
     return (
   <section className="story-photo section-padding">
-     <div className="container">
+     <div className="container-fluid">
         <div className="row">
            <div className="col-md-12 zero-padding wow fadeInUp">
               <div className="col-md-12 zero-padding iot-platform-headeing">
@@ -38,12 +38,12 @@ export default class AppSection extends React.Component {
                     <div className="col-md-12 download-style">
                        <h3>Download Now</h3>
                     </div>
-                    <div className="icon-app">
-                       <ul>
-                          <li><img src={server}></img></li>
-                          <li><img src={apple}></img></li>
-                          <li><img src={windows}></img></li>
-                       </ul>
+                    <div className="container-fluid">
+                       <div className="row">
+                          <div className="col-xs-4"><img src={server}></img></div>
+                          <div className="col-xs-4"><img src={apple}></img></div>
+                          <div className="col-xs-4"><img src={windows}></img></div>
+                       </div>
                     </div>
                  </div>
                  <div className="col-md-5">

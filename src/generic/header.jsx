@@ -30,7 +30,7 @@ export default class Header extends React.Component {
 		let headerData = TestData.header.map((val, i) => {
 			return (
 				<li key={i}>
-					<a href={val.link} className={window.location.href.indexOf(val.link) >= 0 ? 'active' : ''}>{val.name}</a>
+					<a href={val.link} className={window.location.href.indexOf(val.link) >= 0 ? 'active' : 'active-null'}>{val.name}</a>
 				</li>
 			);
 		});
@@ -46,7 +46,7 @@ export default class Header extends React.Component {
 					<header style={{
 						'backgroundColor': '#FFFFFF'
 					}}>
-						<div className="container-fluid">
+						<div className="container">
 							<div className="row">
 								<div className="col-md-12 col-xs-12" id="header">
 									<div className="logo-header col-md-2 col-sm-2 col-xs-4 text-left">

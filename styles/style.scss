@@ -855,6 +855,9 @@ button#sen-tab {
   .active {
     border-bottom: 2px solid #337ab7;
   }
+  .active-null{
+    border-bottom: 2px solid transparent;
+  }
 }
 
 .mydiv {

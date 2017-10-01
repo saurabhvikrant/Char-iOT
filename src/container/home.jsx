@@ -80,21 +80,17 @@ export default class Home extends React.Component {
 	render() {
 		let BodySectionData = TestData.howItWorks.map((val, i) => {
 			return (
-				<div key={i} id="fullpage" className="col-sm-4 col-md-4">
-					<div className="col-md-12 how-it-work-heading">
-						<h4 className=" text-center">{val.header}</h4>
-						<img src={choose} className="img-width p20"></img>
-						<p className="how-it-work-content">{val.content}</p>
-					</div>
+				<div key={i} id="fullpage" className="col-sm-4 how-it-work-heading">
+					<h4 className="text-center">{val.header}</h4>
+					<img src={choose} className="img-width p20"></img>
+					<p className="how-it-work-content">{val.content}</p>
 				</div>
 			);
 		});
 		return (
 			<div className="main">
 				<div><Header /></div>
-				<div id="ScrollTop"  className="Scroller">
-					<i className="fa fa-chevron-up" aria-hidden="true"></i>
-				</div>
+				<div id="ScrollTop" className="Scroller"><i className="fa fa-chevron-up" aria-hidden="true"></i></div>
 				{/*<div id="ScrollBottom" className="Scroller">
 					<i className="fa fa-chevron-Bottom" aria-hidden="true"></i>
 				</div>*/}
@@ -118,25 +114,20 @@ export default class Home extends React.Component {
 							</div>
 						</div>
 					</div>
-
 				</section>*/}
 				<div id='section2'>
-					<div >
-						<section className="story-photo section-padding">
-							<div className="container">
-								<div className="row">
-									<div className="col-md-12 zero-padding wow fade-in-up">
-										<div className="col-md-12 zero-padding">
-											<h2 className="heading-title text-center">How it works</h2>
-											<div>
-												{BodySectionData}
-											</div>
-										</div>
+					<section className="story-photo section-padding">
+						<div className="container-fluid">
+							<div className="row">
+								<div className="col-md-12 wow fade-in-up p-a-md">
+									<div className="row">
+										<h2 className="heading-title text-center">How it works</h2>
+										{BodySectionData}
 									</div>
 								</div>
 							</div>
-						</section>
-					</div>
+						</div>
+					</section>
 				</div>
 				<div id="first">
 					<IotSection/>
