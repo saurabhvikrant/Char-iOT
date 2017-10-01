@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/index.scss';
 import $ from 'jquery';
 import Header from '../generic/header';
 import Footer from '../generic/footer';

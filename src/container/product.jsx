@@ -2,11 +2,9 @@ import React from 'react';
 import Footer from '../generic/footer';
 import Header from '../generic/header';
 import LoadingIcon from '../generic/LoadingIcon';
-import '../../styles/index.scss';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router';
-import * as _ from 'lodash';
 import $ from 'jquery';
 
 import ProductPage from './../components/product/product';

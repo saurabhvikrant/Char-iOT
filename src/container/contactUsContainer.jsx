@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from '../generic/footer';
-import '../../styles/index.scss';
 import Header from '../generic/header';
 import ContactUsComponent from './../components/contactsUs/contactUsComponent';
 import SendMessageComponent from './../components/contactsUs/sendMessageComponent';

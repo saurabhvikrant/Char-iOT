@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/index.scss';
 import footer from '../images/footer-logo.png'
 import lorawan from '../images/lorawan.png'
 const TestData = require('./generic.json');
@@ -46,13 +45,13 @@ export default class Footer extends React.Component {
 							<div className="col-sm-12 partner-img-section">
 								<div className='row'>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300"/>
 									</div>
 								</div>
 							</div>
@@ -60,13 +59,13 @@ export default class Footer extends React.Component {
 							<div className="col-sm-12 partner-img-section">
 								<div className='row p-y'>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300"/>
 									</div>
 								</div>
 							</div>

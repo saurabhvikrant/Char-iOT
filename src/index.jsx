@@ -1,6 +1,7 @@
 import React from 'react';
 import 'sweetalert';
 import 'sweetalert/dist/sweetalert.css';
+import '../styles/index.scss';
 import ReactDOM from 'react-dom';
 import thunk from 'redux-thunk';
 import {Provider} from 'react-redux';

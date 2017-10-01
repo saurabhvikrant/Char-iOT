@@ -815,7 +815,7 @@ h6.co-founder-style {
 
 footer {
   background-color: #383938;
-  padding: 193px 0 30px 0;
+  padding: 100px 0 30px 0;
 }
 
 /**Contact us**/
@@ -1037,4 +1037,13 @@ a.active-style {
   margin: 10px 5%;
   width: 90%;
   height: auto;
+}
+.max-width-150{
+  max-width: 150px;
+}
+.max-width-100{
+  max-width: 100px;
+}
+.max-width-300{
+  max-width: 300px;
 }
