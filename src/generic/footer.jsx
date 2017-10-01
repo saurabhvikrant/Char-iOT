@@ -92,11 +92,8 @@ export default class Footer extends React.Component {
 												<i className="fa fa-flag-o" aria-hidden="true"></i>
 												<p>K-88 A, Second Floor, New Mahaveer Nagar,&nbsp; &nbsp;&nbsp; Tilak Nagar, West Delhi New Delhi,</p> India - 110018
 											</li>
-											<li>
-												<i className="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;info@chariotco.in</li>
-											<li>
-												<i className="fa fa-mobile mobile-style" aria-hidden="true"></i>&nbsp; +91-9785967626<br/>&nbsp; &nbsp;&nbsp; +91-9785967626
-											</li>
+											<li><i className="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;info@chariotco.in</li>
+											<li><i className="fa fa-mobile mobile-style" aria-hidden="true"></i>&nbsp; +91-9785967626<br/>&nbsp; &nbsp;&nbsp; +91-9785967626</li>
 										</ul>
 									</div>
 									<div className="col-md-3 compny-sec">

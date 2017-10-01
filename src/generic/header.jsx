@@ -46,7 +46,7 @@ export default class Header extends React.Component {
 					<header style={{
 						'backgroundColor': '#FFFFFF'
 					}}>
-						<div className="container">
+						<div className="container-fluid">
 							<div className="row">
 								<div className="col-md-12 col-xs-12" id="header">
 									<div className="logo-header col-md-2 col-sm-2 col-xs-4 text-left">

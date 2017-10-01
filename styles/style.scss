@@ -214,7 +214,7 @@ footer {
 }
 
 .footer-bottom {
-  background-color: #10466a;
+  background-color: #383938;
   padding: 24px 0;
 }
 
@@ -256,7 +256,9 @@ footer {
 
 .section-1 {
   background-size: 100% 100%;
-  min-height: 732px;
+  @media all and (max-width: 440px){
+    min-height: 280px
+  }
   h1 {
     color: #fff;
   }
@@ -267,7 +269,10 @@ footer {
 }
 
 .bottom-m {
-  margin-bottom: -25% !important;
+  margin-bottom: -30%;
+  @media all and (max-width: 340px){
+    margin-bottom: -35%;
+  }
 }
 
 /*Header*/
@@ -337,7 +342,7 @@ footer {
 }
 
 a#banner-know-more-tab {
-  padding: 13px 80px;
+  padding: .25vw 80px;
   font-size: 18px;
 }
 
@@ -553,10 +558,6 @@ li.logo-header {
   }
 }
 
-.footer-bottom {
-  background-color: #383938;
-}
-
 p {
   &.footer-botem-style {
     color: #ffffff !important;
@@ -581,14 +582,47 @@ p {
 
 .baner-inner-content {
   h1 {
-    font-size: 47.51px;
+    font-size: 2.5rem;
     margin-top: 140px;
     color: #565e6c;
     font-weight: 400;
+    @media all and (max-width: 457px){
+      font-size: 1rem;
+    }
+    @media (min-width: 441px) and (max-width: 540px){
+      font-size: 1.25rem;
+    }
+    @media (min-width: 541px) and (max-width: 640px){
+      font-size: 1.5rem;
+    }
+    @media (min-width: 641px) and (max-width: 768px){
+      font-size: 1.75rem;
+    }
+    @media (min-width: 769px) and (max-width: 992px){
+      font-size: 2rem;
+    }
+    @media (min-width: 993px) and (max-width: 1200px){
+      font-size: 2.25rem;
+    }
   }
   p {
     color: #565e6c;
+    @media all and (max-width: 440px){
+      font-size: 7px;
+    }
+    @media (min-width: 441px) and (max-width: 768px){
+      font-size: 10px;
+    }
+    @media (min-width: 769px) and (max-width: 992px){
+      font-size: 12px;
+    }
+    @media (min-width: 993px) and (max-width: 1200px){
+      font-size: 14px;
+    }
+    font-size: 14px;
     font-weight: 400;
+    margin-top: 3vw;
+    text-align: justify;
     z-index: 2;
   }
 }
@@ -950,7 +984,29 @@ a.active-style {
 
 .margin-top-p {
   position: absolute;
-  margin-top: -950px !important;
+  top: 3vw;
+  @media all and (max-width: 389px){
+    top: -1vw;
+    top: -21vw;
+  }
+  @media (min-width: 388px) and (max-width: 429px){
+    top: -17vw;
+  }
+  @media (min-width: 430px) and (max-width: 499px){
+    top: -14vw;
+  }
+  @media (min-width: 500px) and (max-width: 599px){
+    top: -9vw;
+  }
+  @media (min-width: 600px) and (max-width: 768px){
+    top: -4vw;
+  }
+  @media (min-width: 769px) and (max-width: 992px){
+    top: -2.5vw;
+  }
+  @media (min-width: 993px) and (max-width: 1200px){
+    top: 1vw;
+  }
 }
 
 /****************************************

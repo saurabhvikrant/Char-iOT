@@ -33,9 +33,9 @@ export default class AppSection extends React.Component {
                     </div>
                     <div className="row download-style">
                       <h3>Download Now</h3>
-                      <div className="col-xs-4"><img src={server}></img></div>
-                      <div className="col-xs-4"><img src={apple}></img></div>
-                      <div className="col-xs-4"><img src={windows}></img></div>
+                      <div className="col-xs-4"><img src={server} className="img-90"/></div>
+                      <div className="col-xs-4"><img src={apple} className="img-90"/></div>
+                      <div className="col-xs-4"><img src={windows} className="img-90"/></div>
                     </div>
                   </div>
                 </div>
