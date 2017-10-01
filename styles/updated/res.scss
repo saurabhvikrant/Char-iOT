@@ -1,0 +1,198 @@
+@media all and (max-width: 768px) {
+  .navbar-default {
+    .navbar-toggle {
+      background-color: #f0ad4e;
+      border-color: #eea236;
+      margin-top: 12px;
+      padding: 6px 7px;
+      &:hover {
+        background-color: #eea236;
+      }
+    }
+    .navbar-nav > .active > a {
+      background-color: white !important;
+      border-color: #eea236;
+      margin-top: 12px;
+      padding: 6px 7px;
+    }
+  }
+  .navbar-inverse .navbar-collapse {
+    border: none;
+    position: absolute;
+    top: 60px;
+    background: #0b79bf;
+    left: -145px;
+    right: 0;
+    z-index: 9;
+    width: 250px;
+  }
+  .nav {
+    padding-left: 0px;
+  }
+  .navbar-default {
+    background-color: transparent;
+    .navbar-toggle {
+      &:focus {
+        background-color: #f0ad4e !important;
+        border-color: #eea236 !important;
+      }
+      &:hover {
+        background-color: #f0ad4e !important;
+        border-color: #eea236 !important;
+        background-color: #fff;
+      }
+    }
+  }
+  .device-img img, .partner-img-section ul li img {
+    width: 90%;
+  }
+  .navbar-header {
+    background: #fff;
+  }
+  .nav > li {
+    padding: 0px 0px 0px 0px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    padding: 0px 15px;
+    font-size: 12px;
+    border-bottom: 1px solid #f7f7f7;
+  }
+  .logo-header img {
+    width: 100px;
+  }
+  li.logo-header img {
+    width: 70px;
+  }
+  #header-top-login {
+    padding: 5px 25px;
+    margin-top: 3px;
+  }
+  .icon-app img {
+    width: 60px;
+  }
+  .partner-img-section ul li {
+    &:first-child {
+      right: 0px;
+      padding: 10px 41px;
+    }
+    &:last-child {
+      left: 0px;
+    }
+  }
+  .footer-bottom {
+    .text-right, .text-left {
+      text-align: center;
+    }
+  }
+  footer {
+    text-align: center;
+    padding: 50px 0 30px 0;
+    h3 {
+      padding-bottom: 5px;
+      padding-top: 20px;
+    }
+  }
+  .footer-social ul {
+    padding: 15px 0;
+    margin: 0;
+  }
+  .footer-article {
+    background-color: transparent;
+  }
+  .story-photo {
+    background: #fff;
+  }
+  h2.heading-title-squad.text-center {
+    padding-top: 25px;
+  }
+  .mission-style h3 {
+    font-size: 28px;
+  }
+  .download-style h3, .story-photo h2, .inquries-style h3, h3.heading-title-contact, .products-heading3 h2, .products-heading4 h2, .varune-style h6 {
+    font-size: 26px;
+  }
+  .form-control {
+    margin-bottom: 0px;
+    padding: 6px 15px;
+  }
+  input {
+    &#form-name, &#form-email {
+      font-size: 14px;
+    }
+  }
+  textarea#comment {
+    font-size: 14px;
+  }
+  button#sen-tab {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    padding: 7px 15px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .map-section {
+    padding-bottom: 50px;
+  }
+  .app-mobile-section {
+    text-align: center;
+    img {
+      float: none;
+      margin-right: 0;
+    }
+  }
+  .partner-img-section ul {
+    padding: 0;
+  }
+  .flexslider {
+    padding: 0 !important;
+    .slides > li {
+      display: block !important;
+    }
+  }
+  .mobile-zero-padding {
+    padding: 0;
+  }
+  .list-section ul {
+    padding-left: 15px;
+  }
+  .zero-padding {
+    &.how-it-style h2, &.iot-platform-headeing.iot-style h2 {
+      padding-top: 0px;
+    }
+  }
+  .iot-platform-headeing h1 {
+    padding-top: 0px;
+  }
+  .company-page-middle .nav-tabs > li.active > a {
+    padding: 10px 10px;
+  }
+  .app-list ul {
+    padding: 0;
+  }
+  .p50 {
+    padding: 20px 0;
+  }
+  /*.baner-inner-content h1 {
+    font-size: 30.51px;
+    margin-top: 35px;
+}*/
+  .section-1 {
+    min-height: 400px;
+  }
+  .varune-style h6 {
+    padding-bottom: 15px;
+  }
+  a#banner-know-more-tab {
+    padding: 8px 80px;
+    font-size: 16px;
+    width: 100%;
+  }
+  /*.baner-inner-content p {
+	position: absolute;
+	top: 17%;
+}*/
+  p.how-it-work-content, .iot-section-second-heading p {
+    text-align: center;
+  }
+}

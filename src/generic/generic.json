@@ -1,0 +1,70 @@
+{
+  "header": [{
+      "name": "PRODUCT",
+      "link": "#/product",
+      "class": "active"
+    },
+    {
+      "name": "PLATFORM",
+      "link": "#/app",
+      "class": "active"
+    },
+    {
+      "name": "BLOGS",
+      "link": "#/contactus",
+      "class": "active"
+    },
+    {
+      "name": "ABOUT US",
+      "link": "#/aboutus",
+      "class": "active"
+    }
+  ],
+  "footer": [{
+      "name": "Product",
+      "link": "#/product",
+      "class": "active"
+    },
+    {
+      "name": "PLATFORM",
+      "link": "#/app",
+      "class": "active"
+    },
+    {
+      "name": "Blogs",
+      "link": "#/contactus",
+      "class": "active"
+    },
+    {
+      "name": "About Us",
+      "link": "#/aboutus"
+    }
+  ],
+  "nextFooter": [{
+      "name": "Help",
+      "link": ""
+    },
+    {
+      "name": "Feedback",
+      "link": ""
+    },
+    {
+      "name": "FAQ’s",
+      "link": ""
+    },
+    {
+      "name": "Terms&Conditions",
+      "link": ""
+    }
+  ],
+  "mediaFooter": [{
+      "name": "Media",
+      "link": ""
+    },
+    {
+      "name": "Careers",
+      "link": ""
+    }
+
+  ]
+}
