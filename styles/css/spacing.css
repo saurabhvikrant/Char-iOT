@@ -13,6 +13,12 @@
 .m-a-lg{
   margin: 1rem;
 }
+.m-l{
+  margin-left: 1rem;
+}
+.m-r{
+  margin-right: 1rem;
+}
 .m-x-xs{
   margin-left: .25rem;
   margin-right: .25rem;
@@ -67,6 +73,12 @@
 }
 .p-a-lg{
   padding: 1rem;
+}
+.p-l{
+  padding-left: 1rem;
+}
+.p-r{
+  padding-right: 1rem;
 }
 .p-x-xs{
   padding-left: .25rem;

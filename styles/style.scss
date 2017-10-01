@@ -442,17 +442,32 @@ ul.navigation-tab.nav.nav-tabs {
   list-style: disc;
   li {
     padding: 4px 0px;
-    font-size: 13px;
+    font-size: 14px;
+    @media all and (max-width: 768px){
+      font-size: 10px;
+    }
+    @media all and (max-width: 992px){
+      font-size: 12px;
+    }
   }
 }
 
 .chart-section {
   img {
-    width: 394px !important;
-    float: right;
-    padding-bottom: 18px;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto 0;
   }
-  padding-top: 30px;
+  padding-top: 8vw;
+  @media all and (max-width: 768px){
+    padding-top: 25vw;
+  }
+  @media (min-width: 769px) and (max-width: 1200px){
+    padding-top: 8vw;
+  }
+  @media (min-width: 1200px){
+    padding-top: 10px;
+  }
 }
 
 .flex-viewport {
@@ -472,7 +487,8 @@ ul.navigation-tab.nav.nav-tabs {
 .download-style h3 {
   color: #d8d9d7;
   font-size: 38px;
-  padding: 0px 21px;
+  padding: 21px;
+  text-align: center;
 }
 
 .icon-app {
@@ -484,7 +500,7 @@ ul.navigation-tab.nav.nav-tabs {
 }
 
 .download-style {
-  padding-top: 63px;
+  padding-top: 5vw;
 }
 
 .icon-app img {
@@ -962,6 +978,7 @@ a.active-style {
   width: 100%;
 }
 .img-90{
+  margin: 10px 5%;
   width: 90%;
   height: auto;
 }

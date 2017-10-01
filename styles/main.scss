@@ -494,15 +494,6 @@ ul.navigation-tab.nav.nav-tabs {
   }
 }
 
-.chart-section {
-  img {
-    width: 394px !important;
-    float: right;
-    padding-bottom: 18px;
-  }
-  padding-top: 30px;
-}
-
 .flex-viewport {
   box-shadow: 0 7px 20px #ccc;
 }
@@ -1090,6 +1081,7 @@ a#banner-know-more-tab {
   margin-top: 2% !important;
   position: relative;
   box-shadow: 1px 2px 8px #888888 !important;
+  padding-bottom: 10px;
 }
 
 .carousel-control {
@@ -1106,7 +1098,7 @@ a#banner-know-more-tab {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 600px;
+  padding: 0px 10px 50px 10px;
 }
 
 .carousel-indicators li {
