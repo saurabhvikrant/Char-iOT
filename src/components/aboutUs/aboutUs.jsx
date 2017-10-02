@@ -1,6 +1,5 @@
 import React from 'react';
-import aboutImg from '../../images/contact-img.png'
-import '../../../styles/index.scss';
+import aboutImg from '../../images/contact-img.png';
 import lorawan from '../../images/lorawan.png';
 import arrow from '../../images/down-arrow-in-small-circle.png';
 import men from '../../images/men.png';

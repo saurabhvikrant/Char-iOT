@@ -46,10 +46,9 @@ class ProductPageContainer extends React.Component {
 }
 
 ProductPageContainer.propTypes = {
-	frontend: PropTypes.shape({
-		showLoading: PropTypes.number
-	}),
-	productList: PropTypes.Array,
+	frontend: PropTypes.string,
+	showLoading: PropTypes.number,
+	productList: PropTypes.object,
 	onRequestProductList: PropTypes.func
 };
 

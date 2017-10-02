@@ -797,28 +797,6 @@ textarea#comment {
   resize: none;
 }
 
-button#sen-tab {
-  background-color: #0b79bf;
-  padding: 13px 76px;
-  font-size: 18px;
-  color: #fff;
-  border-radius: 25px;
-  font-weight: 400;
-  outline: none;
-  border: none;
-  margin-bottom: 100px;
-  margin-top: 50px;
-  box-shadow: 8px 14px 18px -1px rgba(0, 0, 0, 0.15);
-  &:hover {
-    background-color: #0d6daa;
-    transition: 0.3s;
-  }
-}
-
-.map-section {
-  float: right;
-}
-
 .navbar {
   margin-bottom: 0;
   border: none;
@@ -988,10 +966,6 @@ button#sen-tab {
     background-color: #0d6daa;
     transition: 0.3s;
   }
-}
-
-.map-section {
-  float: right;
 }
 
 .navbar {
