@@ -1039,10 +1039,12 @@ a.active-style {
   width: 90%;
   height: auto;
 }
-.m-a-c{
-  margin-left: 40%;
-  transform: translateX(-40%);
-}
+// .m-a-c{
+//   @media all and (max-width:420px){
+//     margin-left: 40%;
+//     transform: translateX(-40%);
+//   }
+// }
 .max-width-150{
   max-width: 150px;
 }
