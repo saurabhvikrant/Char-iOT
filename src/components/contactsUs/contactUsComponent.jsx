@@ -20,7 +20,7 @@ export default class ContactUsComponent extends React.Component {
 				<section className="story-photo section-padding first">
 					<div className="container-fluid">
 						<div className="row p-a wow iot-platform-headeing">
-							<div className="col-sm-6 ">
+							<div className="col-sm-6">
 								<div className="app-list">
 									<label className="heading-title-contact"><b>Contact us</b></label>
 									<span className="content-of-contact">{contactUsData}</span>
