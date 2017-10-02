@@ -1,7 +1,5 @@
 import React from 'react';
 import Footer from '../generic/footer';
-import '../../styles/index.scss';
-import {Router, Route, Link} from 'react-router'
 import Header from '../generic/header';
 import AboutUs from './../components/aboutUs/aboutUs';
 import $ from 'jquery';
@@ -15,9 +13,7 @@ export default class AboutUsContainer extends React.Component {
 		$(window).ready(function() {
 			window.scrollTo(0, 0);
 			$("#ScrollTop").click(function() {
-				$("html, body").animate({
-					scrollTop: 0
-				}, "slow");
+				$("html, body").animate({scrollTop: 0}, "slow");
 				return false;
 			});
 		});

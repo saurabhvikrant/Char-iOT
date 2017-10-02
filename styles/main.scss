@@ -364,18 +364,6 @@ footer {
   }
 }
 
-.section-1 {
-  background-size: 100% 100%;
-  min-height: 732px;
-  h1 {
-    color: #fff;
-  }
-  h3 {
-    color: #999;
-    font-size: 20px;
-  }
-}
-
 /*Header*/
 
 .navigation ul li a {
@@ -546,11 +534,6 @@ ul.navigation-tab.nav.nav-tabs {
 
 /*Footer*/
 
-footer {
-  background-color: #383938;
-  padding: 193px 0 30px;
-}
-
 li.logo-header {
   img {
     width: 100px;
@@ -570,7 +553,7 @@ li.logo-header {
 
 .footer-bottom {
   background-color: #383938;
-  border-top: 0 !important;
+  border-top: 1px solid grey !important;
 }
 
 p {
@@ -587,14 +570,6 @@ p {
 
 footer ul li {
   padding: 0;
-}
-
-/*Banner Section*/
-
-.baner-inner-content p {
-  font-size: 14px;
-  color: #565e6c;
-  margin-top: 37px;
 }
 
 a#banner-know-more-tab {
@@ -774,11 +749,6 @@ h6.co-founder-style {
   letter-spacing: 1px;
   padding-bottom: 36px;
   margin-top: 160px;
-}
-
-footer {
-  background-color: #383938;
-  padding: 193px 0 30px !important;
 }
 
 /**Contact us**/
@@ -1035,18 +1005,6 @@ button#sen-tab {
     color: #333333;
   }
 }
-
-/*Banner Section*/
-// .baner-inner-content h1 {
-//     font-size: 51.51px;
-//     margin-top: 140px;
-//     color: #565e6c;
-// }
-// .baner-inner-content p {
-//     font-size: 14px;
-//     color: #565e6c;
-//     margin-top: 37px;
-// }
 
 a#banner-know-more-tab {
   box-shadow: 8px 14px 18px -1px rgba(0, 0, 0, 0.15);

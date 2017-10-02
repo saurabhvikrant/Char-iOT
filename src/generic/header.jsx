@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../images/logo.png'
-import '../../styles/index.scss';
 window.jQuery = require('jquery');
 window.$ = require('jquery');
 import $ from 'jquery';
@@ -43,10 +42,8 @@ export default class Header extends React.Component {
 		return (
 			<div id="fullpage">
 				<article className="section right" id="section0">
-					<header style={{
-						'backgroundColor': '#FFFFFF'
-					}}>
-						<div className="container">
+					<header style={{'backgroundColor': '#FFFFFF'}}>
+						<div className="container-fluid">
 							<div className="row">
 								<div className="col-md-12 col-xs-12" id="header">
 									<div className="logo-header col-md-2 col-sm-2 col-xs-4 text-left">

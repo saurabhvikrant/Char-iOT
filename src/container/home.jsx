@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/index.scss';
 import $ from 'jquery';
 import Header from '../generic/header';
 import Footer from '../generic/footer';
@@ -91,30 +90,28 @@ export default class Home extends React.Component {
 			<div className="main">
 				<div><Header /></div>
 				<div id="ScrollTop" className="Scroller"><i className="fa fa-chevron-up" aria-hidden="true"></i></div>
-				{/*<div id="ScrollBottom" className="Scroller">
+				<div id="ScrollBottom" className="Scroller">
 					<i className="fa fa-chevron-Bottom" aria-hidden="true"></i>
-				</div>*/}
-				{/*<section className="section-1 bottom-m">
+				</div>
+				<section className="section-1 bottom-m">
 					<div style={styles.root}>
 						<Video style={styles.video_background} autoPlay loop muted controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']} onCanPlayThrough={() => {}}>
 							<source src='http://technobrix.in/newtbx/chariot/video/chariot_main_gif_screen.mp4' type="video/mp4"></source>
 							<track label="English" kind="subtitles" srcLang="en" default/>
 						</Video>
-						<div className="container margin-top-p">
-							<div className="col-md-8 baner-inner-content">
-								<h1>Smart World-Think IoT & beyond</h1>
-								<p>Chariot welcomes you to the world of possibilities where we take internet of<br/>
-									things to next level of inovation. Connect everything through our smart<br/>
-									products and manage resources like you have never done before.</p>
-								<p className="p20">
-									<a className="btn btn-primary btn-lg border-radius-25" data-animation="animated fadeInLeft" id="banner-know-more-tab">
-										Let’s Explore
-									</a>
-								</p>
-							</div>
+					</div>
+					<div className="container-fluid margin-top-p">
+						<div className="col-sm-8 col-md-6 baner-inner-content">
+							<h1>Smart World-Think IoT & beyond</h1>
+							<p>Chariot welcomes you to the world of possibilities where we take internet of
+								things to next level of inovation. Connect everything through our smart
+								products and manage resources like you have never done before.</p><br/>
+							<a className="btn btn-primary btn-lg border-radius-25" data-animation="animated fadeInLeft" id="banner-know-more-tab">
+								Let’s Explore
+							</a>
 						</div>
 					</div>
-				</section>*/}
+				</section>
 				<div id='section2'>
 					<section className="story-photo section-padding">
 						<div className="container-fluid">

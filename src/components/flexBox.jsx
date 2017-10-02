@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/index.scss';
 import piechart from '../images/pie-chart.png';
 const TestData = require('./home.json');
 

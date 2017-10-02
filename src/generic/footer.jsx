@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/index.scss';
 import footer from '../images/footer-logo.png'
 import lorawan from '../images/lorawan.png'
 const TestData = require('./generic.json');
@@ -46,13 +45,13 @@ export default class Footer extends React.Component {
 							<div className="col-sm-12 partner-img-section">
 								<div className='row'>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 								</div>
 							</div>
@@ -60,13 +59,13 @@ export default class Footer extends React.Component {
 							<div className="col-sm-12 partner-img-section">
 								<div className='row p-y'>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 									<div className='col-sm-4'>
-										<img src={lorawan} className="img-90"/>
+										<img src={lorawan} className="img-90 max-width-300 m-a-c"/>
 									</div>
 								</div>
 							</div>
@@ -83,7 +82,7 @@ export default class Footer extends React.Component {
 						<div className="row">
 							<div id="sec-m" className="col-md-12 wow fade-in-up">
 								<div className="row">
-									<li className="logo-header"><a href="index.html"><img src={footer} className="img-90"/></a></li>
+									<li><a href="index.html"><img src={footer} className="img-90 max-width-150"/></a></li>
 								</div>
 								<div className="row">
 									<div className="col-md-4 logo-sec">
@@ -92,11 +91,8 @@ export default class Footer extends React.Component {
 												<i className="fa fa-flag-o" aria-hidden="true"></i>
 												<p>K-88 A, Second Floor, New Mahaveer Nagar,&nbsp; &nbsp;&nbsp; Tilak Nagar, West Delhi New Delhi,</p> India - 110018
 											</li>
-											<li>
-												<i className="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;info@chariotco.in</li>
-											<li>
-												<i className="fa fa-mobile mobile-style" aria-hidden="true"></i>&nbsp; +91-9785967626<br/>&nbsp; &nbsp;&nbsp; +91-9785967626
-											</li>
+											<li><i className="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;info@chariotco.in</li>
+											<li><i className="fa fa-mobile mobile-style" aria-hidden="true"></i>&nbsp; +91-9785967626<br/>&nbsp; &nbsp;&nbsp; +91-9785967626</li>
 										</ul>
 									</div>
 									<div className="col-md-3 compny-sec">
