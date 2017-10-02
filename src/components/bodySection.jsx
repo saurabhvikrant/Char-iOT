@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/index.scss';
 import choose from '../images/choose.jpg';
 import control from '../images/control.jpg';
 

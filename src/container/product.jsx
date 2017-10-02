@@ -2,11 +2,9 @@ import React from 'react';
 import Footer from '../generic/footer';
 import Header from '../generic/header';
 import LoadingIcon from '../generic/LoadingIcon';
-import '../../styles/index.scss';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router';
-import * as _ from 'lodash';
 import $ from 'jquery';
 
 import ProductPage from './../components/product/product';
@@ -38,7 +36,7 @@ class ProductPageContainer extends React.Component {
 					<i className="fa fa-chevron-up" aria-hidden="true"></i>
 				</div>
 				<div id='top4' className="p50">
-					<LoadingIcon loading={this.props.frontend} {...this.props}/>
+					<LoadingIcon loading={showLoading} {...this.props}/>
 					<ProductPage Products={this.props.productList} {...this.props}/>
 				</div>
 				<Footer/>
@@ -46,6 +44,14 @@ class ProductPageContainer extends React.Component {
 		)
 	}
 }
+
+ProductPageContainer.propTypes = {
+	frontend: PropTypes.string,
+	showLoading: PropTypes.number,
+	productList: PropTypes.object,
+	onRequestProductList: PropTypes.func
+};
+
 function mapStateToProps(state) {
 	let products = state.productList.toJS();
 	let frontend = state.productList.toJS();

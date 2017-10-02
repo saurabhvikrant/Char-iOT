@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../../styles/index.scss';
 import piechart from '../../images/pie-chart.png';
+import PropTypes from 'prop-types';
 import {hashHistory} from 'react-router'
 const TestData = require('./product.json');
 
@@ -27,105 +27,74 @@ export default class ProductPage extends React.Component {
 
 	}
 	render() {
-		let FlexBoxData = TestData.body.map((val, i) => {
-			return (
-				<div key={i} className=" list-section col-md-12 zero-padding">
-					<ul style={{
-						'marginLeft': '5%'
-					}}>
-						<li>{val.name}</li>
-					</ul>
+		let FlexBoxData = TestData.body.map((val, i) => (
+			<div key={i} className="list-section col-md-12 zero-padding">
+				<ul style={{'marginLeft': '5%'}}>
+					<li>{val.name}</li>
+				</ul>
+			</div>
+		));
+		let FlexBoxHead = TestData.head.map((data, k) => (
+			<div key={k} className="row">
+				<div className="col-md-6 varune-style">
+					<h2>{data.head}</h2>
+					<h4>{data.subhead}</h4>
+					<h3>{data.price}</h3>
 				</div>
-			);
-		});
-		let FlexBoxHead = TestData.head.map((data, k) => {
-			return (
-				<div key={k} className="row">
-					<div className="col-md-6 varune-style">
-						<h2>{data.head}</h2>
-						<h4>{data.subhead}</h4>
-						<h3>{data.price}</h3>
-					</div>
-				</div>
-			);
-		});
+			</div>
+		));
 		let {products} = this.state;
-
 		let dataBody = [];
 		dataBody = products && products.productDetails && products.productDetails.Smart_Water_Solution
-		let list = dataBody && dataBody.map((val, idx) => {
-
-			return (
-				<ul key={idx} className="slides">
-					<li>
-						<div className="col-md-12">
-							<div className="col-md-7 company-page-middle zero-padding">
-								<div className="row">
-									<div className="col-md-6 varune-style">
-										<h2>{val.productName}</h2>
-										<p className="varune-style-p">{val.productDescription}</p>
-										<h3>{val.price}</h3>
-									</div>
-								</div>
-								<ul className="navigation-tab nav nav-tabs">
-									<li className="active">
-										<a data-toggle="tab" href="#created">FEATURES</a>
-									</li>
-									<li>
-										<a data-toggle="tab" href="#give">
-											SPECIFICATION</a>
-									</li>
-									<li>
-										<a data-toggle="tab" href="#give2">ANALYTICS FEATURES</a>
-									</li>
-								</ul>
-								<div className="tab-content">
-									<div id="created" className="tab-pane fade in active">
-										<div className=" list-section col-md-12 zero-padding" style={{
-											"marginLeft": "5%"
-										}}>
-											<ul>
-												<li className='display-linebreak'>
-													{val.features}
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div id="give" className="tab-pane fade">
-										<div className="list-section col-md-12 zero-padding">
-											<ul>
-												<li className='display-linebreak'>
-													{val.specifications}
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div id="give2" className="tab-pane fade">
-										<div className="list-section col-md-12 zero-padding">
-											<ul>
-												<li className='display-linebreak'>
-													{val.analyticsFeatures}
-												</li>
-											</ul>
-										</div>
-									</div>
+		let list = dataBody && dataBody.map((val, idx) => (
+			<ul key={idx} className="slides">
+				<li>
+					<div className="col-md-12">
+						<div className="col-md-7 company-page-middle zero-padding">
+							<div className="row">
+								<div className="col-md-6 varune-style">
+									<h2>{val.productName}</h2>
+									<p className="varune-style-p">{val.productDescription}</p>
+									<h3>{val.price}</h3>
 								</div>
 							</div>
-							<div className="col-md-5 chart-section">
-								<div id="demo-pie-2" className="pie-title-center" data-percent="80">
-									<span className="pie-value"></span>
+							<ul className="navigation-tab nav nav-tabs">
+								<li className="active"><a data-toggle="tab" href="#created">FEATURES</a></li>
+								<li><a data-toggle="tab" href="#give">SPECIFICATION</a></li>
+								<li><a data-toggle="tab" href="#give2">ANALYTICS FEATURES</a></li>
+							</ul>
+							<div className="tab-content">
+								<div id="created" className="tab-pane fade in active">
+									<div className=" list-section col-md-12 zero-padding" style={{"marginLeft": "5%"}}>
+										<ul><li className='display-linebreak'>{val.features}</li></ul>
+									</div>
 								</div>
-								<img src={piechart}></img>
+								<div id="give" className="tab-pane fade">
+									<div className="list-section col-md-12 zero-padding">
+										<ul><li className='display-linebreak'>{val.specifications}</li></ul>
+									</div>
+								</div>
+								<div id="give2" className="tab-pane fade">
+									<div className="list-section col-md-12 zero-padding">
+										<ul><li className='display-linebreak'>{val.analyticsFeatures}</li></ul>
+									</div>
+								</div>
 							</div>
 						</div>
-					</li>
-				</ul>
-			)
-		});
+						<div className="col-md-5 chart-section">
+							<div id="demo-pie-2" className="pie-title-center" data-percent="80">
+								<span className="pie-value"></span>
+							</div>
+							<img src={piechart}></img>
+						</div>
+					</div>
+				</li>
+			</ul>
+		));
 
 		return (
 			<section className="p50">
-				<div className="container">
+				<div className="container-fluid">
 					<div className="row">
 						<div id='first' className="products-heading col-md-12 wow fadeInUp">
 							<h2 className="heading-title text-center">Utility Meter</h2>
@@ -140,9 +109,7 @@ export default class ProductPage extends React.Component {
 								<div className="carousel-inner">
 									<div className="item active">
 										<ul className="slides">
-											<li>
-												{list}
-											</li>
+											<li>{list}</li>
 										</ul>
 									</div>
 									<div className="item">
@@ -152,11 +119,11 @@ export default class ProductPage extends React.Component {
 										{list}
 									</div>
 								</div>
-								<a className="left carousel-control" href="#myCarousel" data-slide="prev">
+								<a className="left carousel-control m-l" href="#myCarousel" data-slide="prev">
 									<span className="glyphicon glyphicon-chevron-left"></span>
 									<span className="sr-only">Previous</span>
 								</a>
-								<a className="right carousel-control" href="#myCarousel" data-slide="next">
+								<a className="right carousel-control m-r" href="#myCarousel" data-slide="next">
 									<span className="glyphicon glyphicon-chevron-right"></span>
 									<span className="sr-only">Next</span>
 								</a>
@@ -164,8 +131,7 @@ export default class ProductPage extends React.Component {
 						</div>
 					</div>
 				</div>
-
-				<div className="container">
+				<div className="container-fluid">
 					<div className="row">
 						<div id='sec' className="products-heading col-md-12 wow fadeInUp">
 							<h2 className="heading-title text-center">Smart Street Light</h2>
@@ -180,9 +146,7 @@ export default class ProductPage extends React.Component {
 								<div className="carousel-inner">
 									<div className="item active">
 										<ul className="slides">
-											<li>
-												{list}
-											</li>
+											<li>{list}</li>
 										</ul>
 									</div>
 									<div className="item">
@@ -192,11 +156,11 @@ export default class ProductPage extends React.Component {
 										{list}
 									</div>
 								</div>
-								<a className="left carousel-control" href="#myCarousel" data-slide="prev">
+								<a className="left carousel-control m-l" href="#myCarousel" data-slide="prev">
 									<span className="glyphicon glyphicon-chevron-left"></span>
 									<span className="sr-only">Previous</span>
 								</a>
-								<a className="right carousel-control" href="#myCarousel" data-slide="next">
+								<a className="right carousel-control m-r" href="#myCarousel" data-slide="next">
 									<span className="glyphicon glyphicon-chevron-right"></span>
 									<span className="sr-only">Next</span>
 								</a>
@@ -204,9 +168,10 @@ export default class ProductPage extends React.Component {
 						</div>
 					</div>
 				</div>
-
 			</section>
-
 		)
 	}
+}
+ProductPage.propTypes = {
+	Products: PropTypes.Array
 }

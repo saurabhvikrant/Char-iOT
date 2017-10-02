@@ -364,18 +364,6 @@ footer {
   }
 }
 
-.section-1 {
-  background-size: 100% 100%;
-  min-height: 732px;
-  h1 {
-    color: #fff;
-  }
-  h3 {
-    color: #999;
-    font-size: 20px;
-  }
-}
-
 /*Header*/
 
 .navigation ul li a {
@@ -494,15 +482,6 @@ ul.navigation-tab.nav.nav-tabs {
   }
 }
 
-.chart-section {
-  img {
-    width: 394px !important;
-    float: right;
-    padding-bottom: 18px;
-  }
-  padding-top: 30px;
-}
-
 .flex-viewport {
   box-shadow: 0 7px 20px #ccc;
 }
@@ -555,11 +534,6 @@ ul.navigation-tab.nav.nav-tabs {
 
 /*Footer*/
 
-footer {
-  background-color: #383938;
-  padding: 193px 0 30px;
-}
-
 li.logo-header {
   img {
     width: 100px;
@@ -579,7 +553,7 @@ li.logo-header {
 
 .footer-bottom {
   background-color: #383938;
-  border-top: 0 !important;
+  border-top: 1px solid grey !important;
 }
 
 p {
@@ -596,14 +570,6 @@ p {
 
 footer ul li {
   padding: 0;
-}
-
-/*Banner Section*/
-
-.baner-inner-content p {
-  font-size: 14px;
-  color: #565e6c;
-  margin-top: 37px;
 }
 
 a#banner-know-more-tab {
@@ -785,11 +751,6 @@ h6.co-founder-style {
   margin-top: 160px;
 }
 
-footer {
-  background-color: #383938;
-  padding: 193px 0 30px !important;
-}
-
 /**Contact us**/
 
 // .heading-title-contact {
@@ -834,28 +795,6 @@ textarea#comment {
   color: #565e6c;
   letter-spacing: -0.5px;
   resize: none;
-}
-
-button#sen-tab {
-  background-color: #0b79bf;
-  padding: 13px 76px;
-  font-size: 18px;
-  color: #fff;
-  border-radius: 25px;
-  font-weight: 400;
-  outline: none;
-  border: none;
-  margin-bottom: 100px;
-  margin-top: 50px;
-  box-shadow: 8px 14px 18px -1px rgba(0, 0, 0, 0.15);
-  &:hover {
-    background-color: #0d6daa;
-    transition: 0.3s;
-  }
-}
-
-.map-section {
-  float: right;
 }
 
 .navbar {
@@ -1029,10 +968,6 @@ button#sen-tab {
   }
 }
 
-.map-section {
-  float: right;
-}
-
 .navbar {
   margin-bottom: 0;
   border: none;
@@ -1044,18 +979,6 @@ button#sen-tab {
     color: #333333;
   }
 }
-
-/*Banner Section*/
-// .baner-inner-content h1 {
-//     font-size: 51.51px;
-//     margin-top: 140px;
-//     color: #565e6c;
-// }
-// .baner-inner-content p {
-//     font-size: 14px;
-//     color: #565e6c;
-//     margin-top: 37px;
-// }
 
 a#banner-know-more-tab {
   box-shadow: 8px 14px 18px -1px rgba(0, 0, 0, 0.15);
@@ -1090,6 +1013,7 @@ a#banner-know-more-tab {
   margin-top: 2% !important;
   position: relative;
   box-shadow: 1px 2px 8px #888888 !important;
+  padding-bottom: 10px;
 }
 
 .carousel-control {
@@ -1106,7 +1030,7 @@ a#banner-know-more-tab {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 600px;
+  padding: 0px 10px 50px 10px;
 }
 
 .carousel-indicators li {

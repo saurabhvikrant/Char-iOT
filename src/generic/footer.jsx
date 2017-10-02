@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/index.scss';
 import footer from '../images/footer-logo.png'
 import lorawan from '../images/lorawan.png'
 const TestData = require('./generic.json');
@@ -21,124 +20,93 @@ export default class Footer extends React.Component {
 		});
 	}
 	render() {
-		let footerData = TestData.footer.map((val, i) => {
-			return (
-				<li className='f-w-400' key={i}>
-					<a href="">{val.name}</a>
-				</li>
-			);
-		});
-
-		let footerNextData = TestData.nextFooter.map((val, i) => {
-			return (
-				<li className='f-w-400' key={i}>
-					<a href="">{val.name}</a>
-				</li>
-			);
-		});
-
-		let mediaFooter = TestData.mediaFooter.map((val, i) => {
-			return (
-				<li className='f-w-400' key={i}>
-					<a href="">{val.name}</a>
-				</li>
-			);
-		});
+		let footerData = TestData.footer.map((val, i) => (
+			<li className='f-w-400' key={i}>
+				<a href="">{val.name}</a>
+			</li>
+		));
+		let footerNextData = TestData.nextFooter.map((val, i) => (
+			<li className='f-w-400' key={i}>
+				<a href="">{val.name}</a>
+			</li>
+		));
+		let mediaFooter = TestData.mediaFooter.map((val, i) => (
+			<li className='f-w-400' key={i}>
+				<a href="">{val.name}</a>
+			</li>
+		));
 
 		return (
 			<div>
 				<section id="first-m" className="story-photo section">
-					<div className="container">
+					<div className="container-fluid">
 						<div className="row">
-							<br /><br /><br /><br />
-							<div className="col-sm-12 partne-section"><h2>Partners</h2><br /></div>
-							<div className="row">
-								<div className="col-sm-12 partner-img-section">
-									<ul>
-										<li className='col-sm-4'>
-											<img src={lorawan} className="img-90"></img>
-										</li>
-										<li className='col-sm-4'>
-											<img src={lorawan} className="img-90"></img>
-										</li>
-										<li className='col-sm-4'>
-											<img src={lorawan} className="img-90"></img>
-										</li>
-									</ul>
+							<div className="col-sm-12 partne-section"><h2>Partners</h2></div>
+							<div className="col-sm-12 partner-img-section">
+								<div className='row'>
+									<div className='col-sm-4 text-center'>
+										<img src={lorawan} className="img-90 max-width-300"/>
+									</div>
+									<div className='col-sm-4 text-center'>
+										<img src={lorawan} className="img-90 max-width-300"/>
+									</div>
+									<div className='col-sm-4 text-center'>
+										<img src={lorawan} className="img-90 max-width-300"/>
+									</div>
 								</div>
 							</div>
-							<br /><br />
-							<div className="col-sm-12 partne-section"><h2>Media</h2><br /></div>
-							<div className="row">
-								<div className="col-sm-12 partner-img-section">
-									<ul>
-										<li className='col-sm-4'>
-											<img src={lorawan} className="img-90"></img>
-										</li>
-										<li className='col-sm-4'>
-											<img src={lorawan} className="img-90"></img>
-										</li>
-										<li className='col-sm-4'>
-											<img src={lorawan} className="img-90"></img>
-										</li>
-									</ul>
+							<div className="col-sm-12 partne-section"><h2>Media</h2></div>
+							<div className="col-sm-12 partner-img-section">
+								<div className='row p-y'>
+									<div className='col-sm-4 text-center'>
+										<img src={lorawan} className="img-90 max-width-300"/>
+									</div>
+									<div className='col-sm-4 text-center'>
+										<img src={lorawan} className="img-90 max-width-300"/>
+									</div>
+									<div className='col-sm-4 text-center'>
+										<img src={lorawan} className="img-90 max-width-300"/>
+									</div>
 								</div>
 							</div>
-							<br />
 						</div>
 					</div>
 				</section>
-				<br /><br />
 				<article className="section footer-article" id="section5">
 					<div id="stop" className="scrollTop">
-						<span>
-							<a href="">
-								<i className="fa fa-chevron-up" aria-hidden="true"></i>
-							</a>
-						</span>
+						<span><a href=""><i className="fa fa-chevron-up" aria-hidden="true"></i></a></span>
 					</div>
 				</article>
 				<footer className="footer">
-					<div className="container">
+					<div className="container-fluid">
 						<div className="row">
-							<div id="sec-m" className="col-md-12 zero-padding wow fade-in-up">
-								<div className="col-md-4 logo-sec">
-									<ul>
-										<li className="logo-header">
-											<a href="index.html">
-												<img src={footer} className="img-90"></img>
-											</a>
-										</li>
-										<li>
-											<i className="fa fa-flag-o" aria-hidden="true"></i>
-											K-88 A, Second Floor, New Mahaveer Nagar,&nbsp; &nbsp;&nbsp; Tilak Nagar, West Delhi New Delhi,<br/>
-											India - 110018
-										</li>
-										<li>
-											<i className="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;info@chariotco.in</li>
-										<li>
-											<i className="fa fa-mobile mobile-style" aria-hidden="true"></i>&nbsp; {'+91-9785967626'}<br/>
-											&nbsp; &nbsp;&nbsp; {'+91-9785967626'}
-										</li>
-									</ul>
+							<div id="sec-m" className="col-md-12 wow fade-in-up">
+								<div className="row">
+									<li><a href="index.html"><img src={footer} className="img-90 max-width-150"/></a></li>
 								</div>
-								<div className="col-md-3 compny-sec">
-									<h3>COMPANY</h3>
-									<ul>
-										{footerData}
-									</ul>
-								</div>
-								<div className="col-md-3 compny-sec">
-									<h3>SUPPORT</h3>
-									<ul>
-										{footerNextData}
-									</ul>
-								</div>
-								<div className="col-md-2 compny-sec">
-									<h3>REACH</h3>
-									<ul>
-										{mediaFooter}
-									</ul>
+								<div className="row">
+									<div className="col-md-4 logo-sec">
+										<ul>
+											<li>
+												<i className="fa fa-flag-o" aria-hidden="true"></i>
+												<p>K-88 A, Second Floor, New Mahaveer Nagar,&nbsp; &nbsp;&nbsp; Tilak Nagar, West Delhi New Delhi,</p> India - 110018
+											</li>
+											<li><i className="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;info@chariotco.in</li>
+											<li><i className="fa fa-mobile mobile-style" aria-hidden="true"></i>&nbsp; +91-9785967626<br/>&nbsp; &nbsp;&nbsp; +91-9785967626</li>
+										</ul>
+									</div>
+									<div className="col-md-3 compny-sec">
+										<h3>COMPANY</h3>
+										<ul>{footerData}</ul>
+									</div>
+									<div className="col-md-3 compny-sec">
+										<h3>SUPPORT</h3>
+										<ul>{footerNextData}</ul>
+									</div>
+									<div className="col-md-2 compny-sec">
+										<h3>REACH</h3>
+										<ul>{mediaFooter}</ul>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -148,31 +116,14 @@ export default class Footer extends React.Component {
 					<div className="container-fluid">
 						<div className="row">
 							<div className="col-md-4 wow fadeInLeft text-left">
-								<p className="footer-botem-style">Designed By- Phanendra Jangid
-								</p>
+								<p className="footer-botem-style">Designed By- Phanendra Jangid</p>
 							</div>
 							<div className="col-md-4 wow fadeInLeft text-left footer-social text-center">
 								<ul>
-									<li>
-										<a>
-											<i className="fa fa-facebook icon-style" aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a>
-											<i className="fa fa-linkedin icon-style" aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a>
-											<i className="fa fa-twitter icon-style" aria-hidden="true"></i>
-										</a>
-									</li>
-									<li>
-										<a>
-											<i className="fa fa-instagram icon-style" aria-hidden="true"></i>
-										</a>
-									</li>
+									<li><a><i className="fa fa-facebook icon-style" aria-hidden="true"></i></a></li>
+									<li><a><i className="fa fa-linkedin icon-style" aria-hidden="true"></i></a></li>
+									<li><a><i className="fa fa-twitter icon-style" aria-hidden="true"></i></a></li>
+									<li><a><i className="fa fa-instagram icon-style" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
 							<div className="col-md-4 text-right wow fadeInRight text-right">
