@@ -11,7 +11,7 @@
   margin: 2rem;
 }
 .m-a-lg{
-  margin: 1rem;
+  margin: 3rem;
 }
 .m-l{
   margin-left: 1rem;
@@ -36,8 +36,8 @@
   margin-right: 2rem;
 }
 .m-x-lg{
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 .m-y-xs{
   margin-top: .25rem;
@@ -56,8 +56,8 @@
   margin-bottom: 2rem;
 }
 .m-y-lg{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .p-a-xs{
   padding: .25rem;
@@ -97,8 +97,8 @@
   padding-right: 2rem;
 }
 .p-x-lg{
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .p-y-xs{
   padding-top: .25rem;
@@ -117,6 +117,6 @@
   padding-bottom: 2rem;
 }
 .p-y-lg{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
