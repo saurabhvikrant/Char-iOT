@@ -95,7 +95,7 @@ export default class ProductPage extends React.Component {
 
 		return (
 			<section className="p50">
-				<div className="container">
+				<div className="container-fluid">
 					<div className="row">
 						<div id='first' className="products-heading col-md-12 wow fadeInUp">
 							<h2 className="heading-title text-center">Utility Meter</h2>
@@ -120,11 +120,11 @@ export default class ProductPage extends React.Component {
 										{list}
 									</div>
 								</div>
-								<a className="left carousel-control" href="#myCarousel" data-slide="prev">
+								<a className="left carousel-control m-l" href="#myCarousel" data-slide="prev">
 									<span className="glyphicon glyphicon-chevron-left"></span>
 									<span className="sr-only">Previous</span>
 								</a>
-								<a className="right carousel-control" href="#myCarousel" data-slide="next">
+								<a className="right carousel-control m-r" href="#myCarousel" data-slide="next">
 									<span className="glyphicon glyphicon-chevron-right"></span>
 									<span className="sr-only">Next</span>
 								</a>
@@ -132,7 +132,7 @@ export default class ProductPage extends React.Component {
 						</div>
 					</div>
 				</div>
-				<div className="container">
+				<div className="container-fluid">
 					<div className="row">
 						<div id='sec' className="products-heading col-md-12 wow fadeInUp">
 							<h2 className="heading-title text-center">Smart Street Light</h2>
@@ -157,11 +157,11 @@ export default class ProductPage extends React.Component {
 										{list}
 									</div>
 								</div>
-								<a className="left carousel-control" href="#myCarousel" data-slide="prev">
+								<a className="left carousel-control m-l" href="#myCarousel" data-slide="prev">
 									<span className="glyphicon glyphicon-chevron-left"></span>
 									<span className="sr-only">Previous</span>
 								</a>
-								<a className="right carousel-control" href="#myCarousel" data-slide="next">
+								<a className="right carousel-control m-r" href="#myCarousel" data-slide="next">
 									<span className="glyphicon glyphicon-chevron-right"></span>
 									<span className="sr-only">Next</span>
 								</a>
