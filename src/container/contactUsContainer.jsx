@@ -32,7 +32,7 @@ export default class ContactUsContainer extends React.Component {
 					<i className="fa fa-chevron-up" aria-hidden="true"></i>
 				</div>
 				<section id='top3' className="section-1">
-					<div className="container">
+					<div className="container-fluid">
 						<div id="first" className="row hidden">
 							<ContactUsComponent/>
 						</div>

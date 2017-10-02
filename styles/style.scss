@@ -865,7 +865,7 @@ textarea#comment {
 
 button#sen-tab {
   background-color: #0b79bf;
-  padding: 13px 76px;
+  padding: 13px 7vw;
   font-size: 18px;
   color: #fff;
   border-radius: 25px;
@@ -873,16 +873,13 @@ button#sen-tab {
   outline: none;
   border: none;
   margin-bottom: 100px;
-  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 8px 14px 18px -1px rgba(0, 0, 0, 0.15);
   &:hover {
     background-color: #0d6daa;
     transition: 0.3s;
   }
-}
-
-.map-section {
-  float: right;
 }
 
 .navbar {
@@ -1045,12 +1042,15 @@ a.active-style {
 //     transform: translateX(-40%);
 //   }
 // }
-.max-width-150{
-  max-width: 150px;
-}
 .max-width-100{
   max-width: 100px;
 }
+.max-width-150{
+  max-width: 150px;
+}
 .max-width-300{
   max-width: 300px;
+}
+.max-width-400{
+  max-width: 400px;
 }
