@@ -31,6 +31,7 @@ export default class AppBodyContainer extends React.Component {
 
 	}
 	render() {
+		console.log(TestData);
 		let appData = TestData.body.map((val, i) => (
 			<ul key={i}>
 				<li>{val.name}</li>

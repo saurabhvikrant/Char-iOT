@@ -24,7 +24,7 @@ export default class App extends React.Component {
 				<div><Header/></div>
 				<div id="ScrollTop"><i className="fa fa-chevron-up" aria-hidden="true"></i></div>
 				<section id='top2' className="section-1">
-					<div className="container">
+					<div className="container-fluid">
 						<div className="row">
 							<AppBodyComponent/>
 						</div>
