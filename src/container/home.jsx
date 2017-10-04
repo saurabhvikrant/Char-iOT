@@ -55,8 +55,8 @@ export default class Home extends React.Component {
 				return false;
 			});
 			$('#ScrollBottom').click(function() {
-				$("html, body").animate({scrollBottom: 0}, "slow");
-				return false;
+				let h = $(window).height() + $(window).scrollTop();
+				$("html, body").animate({scrollTop: h}, "slow");
 			});
 		});
 
@@ -64,7 +64,6 @@ export default class Home extends React.Component {
 			let scrollAmount = $(window).scrollTop();
 			if (scrollAmount < 500) {
 				$('#ScrollTop').fadeOut("slow");
-				$('#ScrollBottom').fadeOut("slow");
 			} else {
 				$('#ScrollTop').fadeIn("slow");
 			}
@@ -90,9 +89,7 @@ export default class Home extends React.Component {
 			<div className="main">
 				<div><Header /></div>
 				<div id="ScrollTop" className="Scroller"><i className="fa fa-chevron-up" aria-hidden="true"></i></div>
-				<div id="ScrollBottom" className="Scroller">
-					<i className="fa fa-chevron-Bottom" aria-hidden="true"></i>
-				</div>
+				<div id="ScrollBottom" className="Scroller"><i className="fa fa-chevron-down" aria-hidden="true"></i></div>
 				<section className="section-1 bottom-m">
 					<div style={styles.root}>
 						<Video style={styles.video_background} autoPlay loop muted controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']} onCanPlayThrough={() => {}}>

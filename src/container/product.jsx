@@ -22,6 +22,10 @@ class ProductPageContainer extends React.Component {
 					scrollTop: $("#top4").offset().top
 				}, 2000);
 			});
+			$('#ScrollBottom').click(function() {
+				let h = $(window).height() + $(window).scrollTop();
+				$("html, body").animate({scrollTop: h}, "slow");
+			});
 		});
 		this.props.onRequestProductList()
 	}
@@ -32,9 +36,8 @@ class ProductPageContainer extends React.Component {
 				<div>
 					<Header/>
 				</div>
-				<div id="ScrollTop">
-					<i className="fa fa-chevron-up" aria-hidden="true"></i>
-				</div>
+				<div id="ScrollTop"><i className="fa fa-chevron-up" aria-hidden="true"></i></div>
+				<div id="ScrollBottom" className="Scroller"><i className="fa fa-chevron-down" aria-hidden="true"></i></div>
 				<div id='top4' className="p50">
 					<LoadingIcon loading={showLoading} {...this.props}/>
 					<ProductPage Products={this.props.productList} {...this.props}/>

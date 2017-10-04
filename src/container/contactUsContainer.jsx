@@ -18,6 +18,10 @@ export default class ContactUsContainer extends React.Component {
 		$('#ScrollTop').click(function() {
 			$(window).scrollTop(0);
 		});
+		$('#ScrollBottom').click(function() {
+			let h = $(window).height() + $(window).scrollTop();
+			$("html, body").animate({scrollTop: h}, "slow");
+		});
 	}
 	componentWillReceiveProps(props) {
 		window.scrollTo(0, 0);
@@ -28,9 +32,8 @@ export default class ContactUsContainer extends React.Component {
 				<div>
 					<Header/>
 				</div>
-				<div id="ScrollTop">
-					<i className="fa fa-chevron-up" aria-hidden="true"></i>
-				</div>
+				<div id="ScrollTop"><i className="fa fa-chevron-up" aria-hidden="true"></i></div>
+				<div id="ScrollBottom" className="Scroller"><i className="fa fa-chevron-down" aria-hidden="true"></i></div>
 				<section id='top3' className="section-1">
 					<div className="container-fluid">
 						<div id="first" className="row hidden">

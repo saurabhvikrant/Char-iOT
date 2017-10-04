@@ -16,6 +16,10 @@ export default class AboutUsContainer extends React.Component {
 				$("html, body").animate({scrollTop: 0}, "slow");
 				return false;
 			});
+			$('#ScrollBottom').click(function() {
+				let h = $(window).height() + $(window).scrollTop();
+				$("html, body").animate({scrollTop: h}, "slow");
+			});
 		});
 	}
 	render() {
@@ -24,9 +28,8 @@ export default class AboutUsContainer extends React.Component {
 				<div>
 					<Header/>
 				</div>
-				<div id="ScrollTop">
-					<i className="fa fa-chevron-up" aria-hidden="true"></i>
-				</div>
+				<div id="ScrollTop"><i className="fa fa-chevron-up" aria-hidden="true"></i></div>
+				<div id="ScrollBottom" className="Scroller"><i className="fa fa-chevron-down" aria-hidden="true"></i></div>
 				<div id='top1' className="p50">
 					<AboutUs/>
 				</div>

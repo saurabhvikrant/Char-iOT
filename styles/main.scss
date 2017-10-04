@@ -1071,8 +1071,8 @@ a#banner-know-more-tab {
   display: none;
   position: fixed;
   right: 2%;
-  bottom: 22px;
-  padding: 13px 16px 16px;
+  bottom: 60px;
+  padding: 10px 13px 13px;
   border-radius: 25px;
   background-color: #225c82;
   transition: all 0.4s ease-in-out 0s;
@@ -1080,11 +1080,11 @@ a#banner-know-more-tab {
   color: white;
 }
 #ScrollBottom {
-  display: none;
+  display: block;
   position: fixed;
   right: 2%;
-  bottom: 22px;
-  padding: 13px 16px 16px;
+  bottom: 15px;
+  padding: 10px 13px 13px;
   border-radius: 25px;
   background-color: #225c82;
   transition: all 0.4s ease-in-out 0s;

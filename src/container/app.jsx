@@ -16,6 +16,10 @@ export default class App extends React.Component {
 					scrollTop: $("#top2").offset().top
 				}, 2000);
 			});
+			$('#ScrollBottom').click(function() {
+				let h = $(window).height() + $(window).scrollTop();
+				$("html, body").animate({scrollTop: h}, "slow");
+			});
 		});
 	}
 	render() {
@@ -23,6 +27,7 @@ export default class App extends React.Component {
 			<div className="main">
 				<div><Header/></div>
 				<div id="ScrollTop"><i className="fa fa-chevron-up" aria-hidden="true"></i></div>
+				<div id="ScrollBottom" className="Scroller"><i className="fa fa-chevron-down" aria-hidden="true"></i></div>
 				<section id='top2' className="section-1">
 					<div className="container">
 						<div className="row">
