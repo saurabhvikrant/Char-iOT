@@ -1,4 +1,9 @@
 # ChariOT Project
+
+### Smart World-Think IoT & beyond
+
+* Chariot welcomes you to the world of possibilities where we take internet of things to next level of inovation. Connect everything through our smart products and manage resources like you have never done before.
+
 ### What's in it?
 
 * Simple src/index.jsx and src/index.css (local module css).
